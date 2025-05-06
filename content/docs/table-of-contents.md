@@ -23,7 +23,10 @@ toc: true
 ### **Main Sections**
 
 - [**About This Book**](/docs/data-science-for-commercial/)
-- [**Guide for Efficient Reading**](/docs/guide-for-reading/)
+- [**Preface**](/docs/preface/)
+- [**Foreword**](/docs/foreword/)
+- [**Foreword**](/docs/foreword2/)
+
 
 ---
 
@@ -44,6 +47,13 @@ toc: true
 - [**Chapter 13 - Integrating Data Science into Business Operations**](/docs/chapter-13/)  
 - [**Chapter 14 - Managing Risk and Ethical Considerations**](/docs/chapter-14/)  
 - [**Chapter 15 - Scaling Up and Sustaining Initiatives**](/docs/chapter-15/)  
+
+---
+
+### **Closing**
+
+- [**Closing Notes**](/docs/closing-notes/)
+- [**References**](/docs/references/)
 
 ---
 
