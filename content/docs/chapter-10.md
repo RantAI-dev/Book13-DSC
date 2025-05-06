@@ -12,9 +12,12 @@ toc: true
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>It’s critical that we drive the digitization of supply chains because, without it, there will be no transparency; and without transparency, there will be no accountability.</em>" — Christian Lanng</strong>
 {{% /alert %}}
+
+{{% alert icon="📘" context="success" %}}
 <p style="text-align: justify;">
 <em>In this chapter, we explored how data science is revolutionizing distribution and logistics across industries. We began by defining distribution and logistics and establishing how data-driven decision-making has become essential for optimizing supply chain performance. Next, we examined key data sources – from GPS trackers and IoT sensors to transactional systems and external feeds – that fuel modern supply chain analytics. We then delved into specific applications: route optimization algorithms and AI fleet management that streamline transportation networks; predictive maintenance techniques that minimize downtime of vehicles and equipment; and demand forecasting models and inventory optimizations that balance stock levels with customer needs. We saw how real-time dashboards and predictive risk analytics are providing unprecedented visibility and agility to supply chain managers. Throughout, real-world case studies illustrated these concepts in action: finance leveraging analytics for fraud detection, retailers using AI for precise forecasts and warehouse robotics, healthcare ensuring cold chain integrity with sensors, FMCG companies reducing waste with predictive models, and logistics providers accelerating last-mile delivery through AI. Finally, we looked ahead to emerging trends such as blockchain for supply transparency, increasingly autonomous supply chain operations driven by AI, and the push for sustainability using data analytics. In summary, this chapter provided a comprehensive view of how data science tools – from algorithms and machine learning to real-time data platforms – are enabling smarter, faster, and more resilient supply chains, delivering both efficiency gains and strategic advantages for businesses in the digital age.</em>
 </p>
+{{% /alert %}}
 
 # 10.1. Introduction to Data Science in Distribution and Logistics
 <p style="text-align: justify;">
@@ -503,74 +506,114 @@ Here is a set of comprehensive, real-world assignments designed to help you appl
 </p>
 
 ---
-### **Assignment 1:** Strategic Network Design Proposal
-<p style="text-align: justify;">
-<strong>Objective:</strong> Hone your ability to analyze distribution networks using data science and optimization models, balancing cost and delivery objectives.
-</p>
+<center>
 
-<p style="text-align: justify;">
-<strong>Task:</strong> Assume the role of Chief Supply Chain Officer of a mid-sized consumer electronics retailer. Redesign the company’s distribution network to slash logistics costs and improve speed. Include data requirements (historical demand by region, transit times, cost structures), outline modeling approaches (e.g., linear optimization for warehouse location), and evaluate cost-service trade-offs. Present an “optimal” configuration supported by data-driven reasoning, clarifying how model outputs shape strategic decisions.
-</p>
+## 🛠️ Assignments
 
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Start by gathering all demand-related data (SKU velocities, regional sales forecasts) and logistics cost components (transport rates, fixed warehouse overhead, etc.). Explore scenario modeling to compare centralized versus regional warehouse strategies, and consider multiple service-level targets. Conclude with a recommendation on network design, supported by quantitative estimates of cost savings and improvements in delivery metrics.
-</p>
+</center>
 
----
-### **Assignment 2:** Risk Management Playbook
-<p style="text-align: justify;">
-<strong>Objective:</strong> Demonstrate how analytics-driven methods can mitigate supply chain risks tied to single-source dependencies.
-</p>
-
-<p style="text-align: justify;">
-<strong>Task:</strong> As a global manufacturer relying on one key supplier in an unstable region, develop a playbook leveraging data signals like political risk indices and supplier delivery trends. Design an early warning system that triggers specific mitigation actions (e.g., safety stock thresholds, alternative sourcing) when data surpasses set thresholds. Deliver a strategic memo explaining how this data-informed approach balances operational continuity against cost concerns.
-</p>
-
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Identify relevant data (regional economic indicators, lead-time variability, real-time news feeds) and define risk metrics (e.g., probability of disruption). Establish response tiers for each risk level, including recommended safety stock levels or preemptive order volumes. Summarize your recommendations in a concise executive briefing, emphasizing how proactive analytics can reduce unexpected downtime and revenue loss.
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 1: Strategic Network Design Proposal</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Hone your ability to analyze distribution networks using data science and optimization models, balancing cost and delivery objectives.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Task:</h3>
+    <p style="text-align: justify;">Assume the role of Chief Supply Chain Officer of a mid-sized consumer electronics retailer. Redesign the company’s distribution network to slash logistics costs and improve speed. Include data requirements (historical demand by region, transit times, cost structures), outline modeling approaches (e.g., linear optimization for warehouse location), and evaluate cost-service trade-offs. Present an “optimal” configuration supported by data-driven reasoning, clarifying how model outputs shape strategic decisions.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Start by gathering all demand-related data (SKU velocities, regional sales forecasts) and logistics cost components (transport rates, fixed warehouse overhead, etc.). Explore scenario modeling to compare centralized versus regional warehouse strategies, and consider multiple service-level targets. Conclude with a recommendation on network design, supported by quantitative estimates of cost savings and improvements in delivery metrics.</p>
+  </div>
+</div>
 
 ---
-### **Assignment 3:** Digital Transformation Roadmap
-<p style="text-align: justify;">
-<strong>Objective:</strong> Plan a phased roadmap for an acquired, multi-system 3PL to unify data and offer cutting-edge analytics to customers.
-</p>
 
-<p style="text-align: justify;">
-<strong>Task:</strong> Draft a digital transformation strategy focusing on data integration, advanced analytics (volume forecasting, IoT-driven tracking), and customer-facing innovations (AI-driven shipment portals). Clarify short-term “quick wins” (like a unified tracking dashboard) versus long-term initiatives (machine learning for workforce allocation). Outline how these changes differentiate the 3PL in a competitive landscape.
-</p>
-
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Audit current IT and data silos. Detail an architecture for consolidating data—preferably using a modern cloud or data lake approach. Propose incremental analytics deployments (e.g., pilot ML for one region) and scale successes to other geographies. Justify the investment with a market benchmark or pilot success story, highlighting predicted improvements in customer satisfaction and operational efficiency.
-</p>
-
----
-### **Assignment 4:** Sustainability Strategy and Analytics
-<p style="text-align: justify;">
-<strong>Objective:</strong> Design a data-driven plan to slash your fashion retailer’s supply chain carbon footprint by 30% within five years.
-</p>
-
-<p style="text-align: justify;">
-<strong>Task:</strong> Map out the carbon hotspots—transportation, manufacturing, warehousing—and propose targeted, analytics-based interventions (e.g., route optimization, supplier emissions scorecards). Specify the analytic tools or models you will use to track progress and measure reduction goals. Pitch the plan to the Board, linking environmental benefits to brand image and potential cost savings.
-</p>
-
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Begin with baseline carbon measurements for each supply chain stage. Implement route-planning algorithms that minimize fuel burn, propose supplier contracts incorporating sustainability criteria, and set up carbon dashboards to monitor real-time metrics. Show how incremental improvements (like modal shifts or streamlined packaging) can compound to achieve bold environmental targets.
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 2: Risk Management Playbook</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Demonstrate how analytics-driven methods can mitigate supply chain risks tied to single-source dependencies.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Task:</h3>
+    <p style="text-align: justify;">As a global manufacturer relying on one key supplier in an unstable region, develop a playbook leveraging data signals like political risk indices and supplier delivery trends. Design an early warning system that triggers specific mitigation actions (e.g., safety stock thresholds, alternative sourcing) when data surpasses set thresholds. Deliver a strategic memo explaining how this data-informed approach balances operational continuity against cost concerns.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Identify relevant data (regional economic indicators, lead-time variability, real-time news feeds) and define risk metrics (e.g., probability of disruption). Establish response tiers for each risk level, including recommended safety stock levels or preemptive order volumes. Summarize your recommendations in a concise executive briefing, emphasizing how proactive analytics can reduce unexpected downtime and revenue loss.</p>
+  </div>
+</div>
 
 ---
-### **Assignment 5:** Customer-Centric Supply Chain Strategy
-<p style="text-align: justify;">
-<strong>Objective:</strong> Illustrate how data science can boost delivery reliability and customer satisfaction for an e-commerce player struggling with inconsistent performance.
-</p>
 
-<p style="text-align: justify;">
-<strong>Task:</strong> Launch “Deliver Delight,” an initiative that aligns supply chain KPIs—like on-time delivery percentages and exact delivery window precision—with improvements in customer experience. Propose analytics projects (real-time last-mile routing, predictive inventory pre-positioning) and set a feedback loop that leverages customer ratings to diagnose root causes.
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 3: Digital Transformation Roadmap</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Plan a phased roadmap for an acquired, multi-system 3PL to unify data and offer cutting-edge analytics to customers.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Task:</h3>
+    <p style="text-align: justify;">Draft a digital transformation strategy focusing on data integration, advanced analytics (volume forecasting, IoT-driven tracking), and customer-facing innovations (AI-driven shipment portals). Clarify short-term “quick wins” (like a unified tracking dashboard) versus long-term initiatives (machine learning for workforce allocation). Outline how these changes differentiate the 3PL in a competitive landscape.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Audit current IT and data silos. Detail an architecture for consolidating data—preferably using a modern cloud or data lake approach. Propose incremental analytics deployments (e.g., pilot ML for one region) and scale successes to other geographies. Justify the investment with a market benchmark or pilot success story, highlighting predicted improvements in customer satisfaction and operational efficiency.</p>
+  </div>
+</div>
 
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Examine historical delivery failures and correlate them with operational data (driver schedules, packaging errors). Devise new digital tools that let customers track and possibly reroute orders. Show how these upgrades reduce help-desk calls, raise customer loyalty, and cut excess logistics costs. Develop a project timeline identifying critical collaboration between supply chain, marketing, and customer service.
-</p>
+---
+
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 4: Sustainability Strategy and Analytics</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Design a data-driven plan to slash your fashion retailer’s supply chain carbon footprint by 30% within five years.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Task:</h3>
+    <p style="text-align: justify;">Map out the carbon hotspots—transportation, manufacturing, warehousing—and propose targeted, analytics-based interventions (e.g., route optimization, supplier emissions scorecards). Specify the analytic tools or models you will use to track progress and measure reduction goals. Pitch the plan to the Board, linking environmental benefits to brand image and potential cost savings.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Begin with baseline carbon measurements for each supply chain stage. Implement route-planning algorithms that minimize fuel burn, propose supplier contracts incorporating sustainability criteria, and set up carbon dashboards to monitor real-time metrics. Show how incremental improvements (like modal shifts or streamlined packaging) can compound to achieve bold environmental targets.</p>
+  </div>
+</div>
+
+---
+
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 5: Customer-Centric Supply Chain Strategy</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Illustrate how data science can boost delivery reliability and customer satisfaction for an e-commerce player struggling with inconsistent performance.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Task:</h3>
+    <p style="text-align: justify;">Launch “Deliver Delight,” an initiative that aligns supply chain KPIs—like on-time delivery percentages and exact delivery window precision—with improvements in customer experience. Propose analytics projects (real-time last-mile routing, predictive inventory pre-positioning) and set a feedback loop that leverages customer ratings to diagnose root causes.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Examine historical delivery failures and correlate them with operational data (driver schedules, packaging errors). Devise new digital tools that let customers track and possibly reroute orders. Show how these upgrades reduce help-desk calls, raise customer loyalty, and cut excess logistics costs. Develop a project timeline identifying critical collaboration between supply chain, marketing, and customer service.</p>
+  </div>
+</div>
 
 ---
 <p style="text-align: justify;">

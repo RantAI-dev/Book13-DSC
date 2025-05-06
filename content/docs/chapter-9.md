@@ -12,9 +12,13 @@ toc: true
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>The goal is to turn data into information, and information into insight.</em>" — Carly Fiorina</strong>
 {{% /alert %}}
+
+{{% alert icon="📘" context="success" %}}
 <p style="text-align: justify;">
 <em>Data science is revolutionizing the Fast-Moving Consumer Goods sector by enabling companies to make smarter, faster decisions across their business. This chapter explores how FMCG firms use analytics and AI for real-time market trend identification, precise demand forecasting, and deep consumer behavior insights to drive personalization. It highlights how supply chains are optimized through predictive planning and automation, and how data-driven strategies are guiding product innovation and more targeted marketing campaigns. Practical case studies – from Coca-Cola’s use of data to create new flavors to Unilever’s AI-powered supply chain improvements – illustrate tangible benefits. The chapter also addresses the challenges of this data-driven transformation, including data privacy, regulatory compliance, and ensuring ethical, unbiased AI. Looking to the future, it discusses emerging technologies like IoT and blockchain for supply chain transparency and paints a picture of an FMCG industry where data intelligence is integral to staying competitive, fostering innovation, and building trusted consumer relationships.</em>
 </p>
+{{% /alert %}}
+
 
 # 9.1. Introduction to Data Science in FMCG
 <p style="text-align: justify;">
@@ -565,74 +569,114 @@ By engaging with these assignments, you embark on a robust journey through data 
 </p>
 
 ---
-### **Assignment 1:** Market Trends Dashboard
-<p style="text-align: justify;">
-<strong>Objective:</strong> This assignment aims to develop proficiency in real-time data visualization and rapid trend analysis within an FMCG context. You will learn how to ingest, clean, and present time-sensitive sales and social media data so that decision-makers can instantly spot emerging product trends and take immediate action.
-</p>
+<center>
 
-<p style="text-align: justify;">
-<strong>Task:</strong> You receive a dataset combining daily sales figures for multiple products with social media engagement metrics (mentions, likes, sentiment scores) spanning several months. After performing initial data cleaning and normalization (for example, converting social media engagement into an indexed “buzz” score), design a dynamic dashboard that updates regularly to reflect the latest data. Highlight any abrupt spikes or drops in product interest using alerts or color-coded signals. Upon identifying a significant shift, write a concise report discussing why the shift might have occurred—perhaps a viral social media post or a new competitor release—and propose one or two operational responses. For instance, if a spike suggests demand will exceed current production, recommend scaling up manufacturing or expediting distribution to high-demand regions.
-</p>
+## 🛠️ Assignments
 
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Choose visualization tools that allow for real-time or near-real-time data refreshing. Demonstrate how different data filters (by region or product line) can help FMCG managers isolate the cause of a trend. Provide a thorough overview of potential outliers or anomalies (like an influencer-driven mention). Where possible, incorporate rudimentary forecasting features or short-term predictive signals so managers have a glimpse into how a spike or decline could evolve over the next few days. The final deliverable should include the dashboard itself, instructions on how it’s maintained or updated, and a brief analysis that underscores the power of immediate insight for operational decisions.
-</p>
+</center>
 
----
-### **Assignment 2:** Predictive Demand Modeling
-<p style="text-align: justify;">
-<strong>Objective:</strong> This project focuses on enhancing your ability to handle forecasting problems with both classical and cutting-edge methods. It trains you to address seasonality, promotional events, and random externalities, simulating how real-world FMCG products often experience unpredictable fluctuations in demand.
-</p>
-
-<p style="text-align: justify;">
-<strong>Task:</strong> You receive historical sales data for a single product, including monthly or weekly sales volumes, promotional calendars, competitor actions (if applicable), and indicators of seasonality. Construct at least two forecasting models: one using a classical time-series approach (such as ARIMA, SARIMA, or exponential smoothing) and another using a more contemporary machine learning method (like gradient boosting or an LSTM-based neural network). Using a held-out sample, compare forecast accuracy (mean absolute error, RMSE, or MAPE). Then simulate a shock scenario where demand suddenly doubles for one month—perhaps due to an unexpected viral campaign. Demonstrate how each model adapts to this spike: does it quickly learn from the new data, or does it overreact? Finally, present a recommendation on which model the company should trust most under normal conditions versus high volatility, justifying the choice with metrics and observations.
-</p>
-
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Discuss your feature engineering and data preprocessing steps, especially how you handle cyclical patterns like monthly seasonality or holiday effects. Include a debate on the interpretability of each model—executives in FMCG often require clarity on how a forecast is generated. The final report should outline strengths and limitations for each approach, with practical advice about how an FMCG supply chain or marketing team might deploy the chosen model for real-time or near-real-time forecasting.
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 1: Market Trends Dashboard</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">This assignment aims to develop proficiency in real-time data visualization and rapid trend analysis within an FMCG context. You will learn how to ingest, clean, and present time-sensitive sales and social media data so that decision-makers can instantly spot emerging product trends and take immediate action.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Task:</h3>
+    <p style="text-align: justify;">You receive a dataset combining daily sales figures for multiple products with social media engagement metrics (mentions, likes, sentiment scores) spanning several months. After performing initial data cleaning and normalization (for example, converting social media engagement into an indexed “buzz” score), design a dynamic dashboard that updates regularly to reflect the latest data. Highlight any abrupt spikes or drops in product interest using alerts or color-coded signals. Upon identifying a significant shift, write a concise report discussing why the shift might have occurred—perhaps a viral social media post or a new competitor release—and propose one or two operational responses. For instance, if a spike suggests demand will exceed current production, recommend scaling up manufacturing or expediting distribution to high-demand regions.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Choose visualization tools that allow for real-time or near-real-time data refreshing. Demonstrate how different data filters (by region or product line) can help FMCG managers isolate the cause of a trend. Provide a thorough overview of potential outliers or anomalies (like an influencer-driven mention). Where possible, incorporate rudimentary forecasting features or short-term predictive signals so managers have a glimpse into how a spike or decline could evolve over the next few days. The final deliverable should include the dashboard itself, instructions on how it’s maintained or updated, and a brief analysis that underscores the power of immediate insight for operational decisions.</p>
+  </div>
+</div>
 
 ---
-### **Assignment 3:** Consumer Segmentation Project
-<p style="text-align: justify;">
-<strong>Objective:</strong> This project immerses you in the world of customer analytics by having you identify meaningful segments within a synthetic dataset of FMCG e-commerce transactions. The goal is to practice not only cluster analysis but also the strategic thinking required to craft targeted marketing initiatives.
-</p>
 
-<p style="text-align: justify;">
-<strong>Task:</strong> Using a dataset that includes customer demographics (age, location, household size), browsing behavior (pages visited, time on site), and past purchase data (SKUs purchased, frequency, spend), conduct a multi-step analysis. First, perform data cleaning, removing incomplete or erroneous records and standardizing scales. Second, apply at least one clustering algorithm (K-means, hierarchical clustering, or DBSCAN) to unearth distinct customer groups. After naming and describing each segment—perhaps “Healthy Living Enthusiasts” or “Budget-Oriented Families”—propose a targeted marketing strategy for each cluster. This could involve loyalty program perks, email campaign themes, product recommendations, or even specialized social media content.
-</p>
-
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Be transparent about how you determined the optimal number of clusters, possibly referencing the elbow method or silhouette scores. Clearly profile each segment by highlighting average spend, product category preferences, or times of day they tend to shop. A strong assignment deliverable includes a short white paper explaining how an FMCG marketing team could implement the recommendations, linking each segment strategy to measurable KPIs (like increased basket size or reduced churn).
-</p>
-
----
-### **Assignment 4:** Supply Chain Optimization Case
-<p style="text-align: justify;">
-<strong>Objective:</strong> This assignment brings inventory management concepts into real-world FMCG decision-making. You will hone skills in balancing cost, risk, and service levels, learning to manipulate reorder points and safety stock based on data-driven insights.
-</p>
-
-<p style="text-align: justify;">
-<strong>Task:</strong> You receive simplified yet realistic supply chain details for one FMCG product: production lead times, current warehouse stock, historical demand patterns, target service levels, and per-unit storage costs. Calculate the optimal reorder point and safety stock, using formulas or algorithms that account for demand variability and lead time uncertainties. Then conduct a what-if scenario by increasing the standard deviation of demand by 20%, determining how this shift affects optimal safety stock and reorder points. Finally, deliver a recommendation on whether the company should invest in extra safety stock or adopt a just-in-time strategy. Consider additional complexities such as dynamic lead times or volume discounts where applicable.
-</p>
-
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Articulate assumptions about demand distributions or carrying costs, referencing standard operations research equations (like the Newsvendor model) or simulation approaches. A robust solution includes sensitivity analyses—showing how changes in cost or service-level requirements might alter final inventory policies. The assignment deliverable is often a briefing document or presentation that persuades an “executive committee” of the feasibility and benefits of the recommended policy.
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 2: Predictive Demand Modeling</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">This project focuses on enhancing your ability to handle forecasting problems with both classical and cutting-edge methods. It trains you to address seasonality, promotional events, and random externalities, simulating how real-world FMCG products often experience unpredictable fluctuations in demand.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Task:</h3>
+    <p style="text-align: justify;">You receive historical sales data for a single product, including monthly or weekly sales volumes, promotional calendars, competitor actions (if applicable), and indicators of seasonality. Construct at least two forecasting models: one using a classical time-series approach (such as ARIMA, SARIMA, or exponential smoothing) and another using a more contemporary machine learning method (like gradient boosting or an LSTM-based neural network). Using a held-out sample, compare forecast accuracy (mean absolute error, RMSE, or MAPE). Then simulate a shock scenario where demand suddenly doubles for one month—perhaps due to an unexpected viral campaign. Demonstrate how each model adapts to this spike: does it quickly learn from the new data, or does it overreact? Finally, present a recommendation on which model the company should trust most under normal conditions versus high volatility, justifying the choice with metrics and observations.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Discuss your feature engineering and data preprocessing steps, especially how you handle cyclical patterns like monthly seasonality or holiday effects. Include a debate on the interpretability of each model—executives in FMCG often require clarity on how a forecast is generated. The final report should outline strengths and limitations for each approach, with practical advice about how an FMCG supply chain or marketing team might deploy the chosen model for real-time or near-real-time forecasting.</p>
+  </div>
+</div>
 
 ---
-### **Assignment 4:** Ethical AI Review
-<p style="text-align: justify;">
-<strong>Objective:</strong> This assignment confronts the ethical implications of deploying AI in FMCG contexts, honing your ability to anticipate public reaction, navigate biases, and enforce transparency. It fosters both critical thinking and policy-writing skills.
-</p>
 
-<p style="text-align: justify;">
-<strong>Task:</strong> You are given a fictional case study where a brand uses AI-driven microtargeting in a marketing campaign. The campaign misfires when consumers discover that the AI segments them by sensitive personal attributes (possibly inferring socio-economic status), causing backlash on social media. Your job is to analyze the root causes—did the training data incorporate biased features? Were privacy consents overlooked? Did the brand fail to explain its AI usage sufficiently? Then draft a concise redesign of the campaign’s data strategy, proposing specific remedies: removing sensitive attributes from the model, implementing an opt-out mechanism, or mandating human review of automated recommendations. The final output includes practical guidelines for marketing teams, including references to relevant regulations and best practices.
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 3: Consumer Segmentation Project</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">This project immerses you in the world of customer analytics by having you identify meaningful segments within a synthetic dataset of FMCG e-commerce transactions. The goal is to practice not only cluster analysis but also the strategic thinking required to craft targeted marketing initiatives.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Task:</h3>
+    <p style="text-align: justify;">Using a dataset that includes customer demographics (age, location, household size), Browse behavior (pages visited, time on site), and past purchase data (SKUs purchased, frequency, spend), conduct a multi-step analysis. First, perform data cleaning, removing incomplete or erroneous records and standardizing scales. Second, apply at least one clustering algorithm (K-means, hierarchical clustering, or DBSCAN) to unearth distinct customer groups. After naming and describing each segment—perhaps “Healthy Living Enthusiasts” or “Budget-Oriented Families”—propose a targeted marketing strategy for each cluster. This could involve loyalty program perks, email campaign themes, product recommendations, or even specialized social media content.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Be transparent about how you determined the optimal number of clusters, possibly referencing the elbow method or silhouette scores. Clearly profile each segment by highlighting average spend, product category preferences, or times of day they tend to shop. A strong assignment deliverable includes a short white paper explaining how an FMCG marketing team could implement the recommendations, linking each segment strategy to measurable KPIs (like increased basket size or reduced churn).</p>
+  </div>
+</div>
 
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Draw on real-world ethics frameworks or compliance guidelines (like GDPR or consumer privacy regulations), demonstrating how these apply to data-driven campaigns. Weigh potential trade-offs: restricting data collection might reduce personalization accuracy, but it also mitigates reputational risk. A strong submission references fairness concepts (such as ensuring the model does not systematically exclude or disadvantage certain groups) and outlines a process for continuous monitoring to catch bias or privacy issues early.
-</p>
+---
+
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 4: Supply Chain Optimization Case</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">This assignment brings inventory management concepts into real-world FMCG decision-making. You will hone skills in balancing cost, risk, and service levels, learning to manipulate reorder points and safety stock based on data-driven insights.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Task:</h3>
+    <p style="text-align: justify;">You receive simplified yet realistic supply chain details for one FMCG product: production lead times, current warehouse stock, historical demand patterns, target service levels, and per-unit storage costs. Calculate the optimal reorder point and safety stock, using formulas or algorithms that account for demand variability and lead time uncertainties. Then conduct a what-if scenario by increasing the standard deviation of demand by 20%, determining how this shift affects optimal safety stock and reorder points. Finally, deliver a recommendation on whether the company should invest in extra safety stock or adopt a just-in-time strategy. Consider additional complexities such as dynamic lead times or volume discounts where applicable.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Articulate assumptions about demand distributions or carrying costs, referencing standard operations research equations (like the Newsvendor model) or simulation approaches. A robust solution includes sensitivity analyses—showing how changes in cost or service-level requirements might alter final inventory policies. The assignment deliverable is often a briefing document or presentation that persuades an “executive committee” of the feasibility and benefits of the recommended policy.</p>
+  </div>
+</div>
+
+---
+
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 5: Ethical AI Review</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">This assignment confronts the ethical implications of deploying AI in FMCG contexts, honing your ability to anticipate public reaction, navigate biases, and enforce transparency. It fosters both critical thinking and policy-writing skills.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Task:</h3>
+    <p style="text-align: justify;">You are given a fictional case study where a brand uses AI-driven microtargeting in a marketing campaign. The campaign misfires when consumers discover that the AI segments them by sensitive personal attributes (possibly inferring socio-economic status), causing backlash on social media. Your job is to analyze the root causes—did the training data incorporate biased features? Were privacy consents overlooked? Did the brand fail to explain its AI usage sufficiently? Then draft a concise redesign of the campaign’s data strategy, proposing specific remedies: removing sensitive attributes from the model, implementing an opt-out mechanism, or mandating human review of automated recommendations. The final output includes practical guidelines for marketing teams, including references to relevant regulations and best practices.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Draw on real-world ethics frameworks or compliance guidelines (like GDPR or consumer privacy regulations), demonstrating how these apply to data-driven campaigns. Weigh potential trade-offs: restricting data collection might reduce personalization accuracy, but it also mitigates reputational risk. A strong submission references fairness concepts (such as ensuring the model does not systematically exclude or disadvantage certain groups) and outlines a process for continuous monitoring to catch bias or privacy issues early.</p>
+  </div>
+</div>
 
 ---
 <p style="text-align: justify;">

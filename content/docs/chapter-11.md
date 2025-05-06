@@ -12,9 +12,13 @@ toc: true
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>AI model evaluation is not just a technical exercise; it’s a strategic process. By understanding the broader context of the model’s outputs, we can ensure our AI systems create meaningful value while aligning with business goals and ethical standards.</em>" — Anna Samuelsson</strong>
 {{% /alert %}}
+
+{{% alert icon="📘" context="success" %}}
 <p style="text-align: justify;">
 <em>Executives who understand how to measure, validate, and interpret model performance are better positioned to transform data-driven initiatives into powerful competitive advantages. This chapter began with foundational explanations of why model evaluation is crucial and progressed to discussing key performance metrics that directly impact commercial objectives. It then explored the importance of business-focused model interpretation, highlighting both interpretability tools and real-world examples. Building on these insights, the discussion moved to methods for validating models in real-world settings and monitoring them over time to avert pitfalls like model drift. The chapter closed with strategic takeaways for business leaders, reminding them that continuous, well-designed evaluation processes are the bedrock of successful data science initiatives.</em>
 </p>
+{{% /alert %}}
+
 
 # 11.1. Introduction to Model Evaluation
 <p style="text-align: justify;">
@@ -495,79 +499,114 @@ Applying the concepts from this chapter to real-world-style tasks will reinforce
 </p>
 
 ---
-### **Assignment 1:** Define Evaluation Metrics for a New Project
-<p style="text-align: justify;">
-<strong>Objective:</strong> Design and select performance metrics for an AI model that prioritizes incoming customer support tickets, ensuring the chosen metrics directly align with the company’s goals (e.g., reducing response time for urgent tickets and maintaining customer satisfaction).
-</p>
+<center>
 
-<p style="text-align: justify;">
-<strong>Task:</strong> Identify at least three relevant evaluation metrics (for example, precision/recall for detecting urgent tickets, average resolution time for top-priority issues, or a business outcome measure such as SLA breach rates). Explain how each metric connects to the support organization’s commercial or operational objectives. Outline how you would collect or simulate the data needed to calculate these metrics before deployment.
-</p>
+## 🛠️ Assignments
 
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Begin by clarifying the company’s definition of “urgent.” If labels don’t exist, coordinate with domain experts to label a sample of tickets for testing. Compute precision and recall to see how well the model distinguishes urgent from non-urgent tickets, and consider a business outcome metric (like customer satisfaction on resolved tickets). Whenever possible, quantify how improved triage might reduce costs or speed up resolution times. This exercise will reinforce the importance of linking technical performance (like recall) to real-world impact (e.g., fewer escalations, happier customers).
-</p>
+</center>
 
----
-### **Assignment 2:** Perform a Confusion Matrix Analysis
-<p style="text-align: justify;">
-<strong>Objective:</strong> Interpret a binary classification model’s performance through standard metrics—accuracy, precision, recall, and F1-score—and tie these results to a specific business setting (e-commerce purchase predictions).
-</p>
-
-<p style="text-align: justify;">
-<strong>Task:</strong> Using the confusion matrix results (50 true positives, 45 true negatives, 5 false positives, 10 false negatives), calculate and report accuracy, precision, recall, and F1-score. Then, interpret these findings in terms of missed opportunities, marketing costs, and potential adjustments to the model’s threshold or targeting strategies.
-</p>
-
-<p style="text-align: justify;">
-<strong>Guidance</strong>\
-Begin by computing each metric: Accuracy = (TP + TN) / (TP + TN + FP + FN).\
-Precision = TP / (TP + FP).\
-Recall = TP / (TP + FN).\
-F1-score = 2 × (Precision × Recall) / (Precision + Recall).\
-Explain the business implications: missed purchasers represent lost revenue, while false positives might drive unnecessary marketing spend. Recommend whether the company should aim for higher recall or higher precision, considering the cost of promotional offers versus the cost of missing a sale. This step trains you to connect raw performance metrics to actual e-commerce outcomes and strategies.
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 1: Define Evaluation Metrics for a New Project</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Design and select performance metrics for an AI model that prioritizes incoming customer support tickets, ensuring the chosen metrics directly align with the company’s goals (e.g., reducing response time for urgent tickets and maintaining customer satisfaction).</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Task:</h3>
+    <p style="text-align: justify;">Identify at least three relevant evaluation metrics (for example, precision/recall for detecting urgent tickets, average resolution time for top-priority issues, or a business outcome measure such as SLA breach rates). Explain how each metric connects to the support organization’s commercial or operational objectives. Outline how you would collect or simulate the data needed to calculate these metrics before deployment.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Begin by clarifying the company’s definition of “urgent.” If labels don’t exist, coordinate with domain experts to label a sample of tickets for testing. Compute precision and recall to see how well the model distinguishes urgent from non-urgent tickets, and consider a business outcome metric (like customer satisfaction on resolved tickets). Whenever possible, quantify how improved triage might reduce costs or speed up resolution times. This exercise will reinforce the importance of linking technical performance (like recall) to real-world impact (e.g., fewer escalations, happier customers).</p>
+  </div>
+</div>
 
 ---
-### **Assignment 3:** Create an Explainability Report
-<p style="text-align: justify;">
-<strong>Objective:</strong> Communicate the reasoning behind a black-box model’s decision in simple, actionable terms, using insights from an explainability tool (e.g., LIME or SHAP).
-</p>
 
-<p style="text-align: justify;">
-<strong>Task:</strong> Draft a brief (3–4 sentence) explanation of why a loan application was rejected, referencing key factors such as debt-to-income ratio and credit score. Propose one concrete step the applicant might take to improve their approval odds in the future (e.g., reduce debt, add a guarantor).
-</p>
-
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Translate the AI’s local explanation into language that a non-technical loan officer or applicant can understand. Focus on clarity rather than technical jargon: for instance, “The high debt-to-income ratio signaled high risk, and a low credit score contributed to the rejection. However, adding a guarantor or choosing a shorter loan term could significantly reduce the risk profile.” Avoid judgmental phrases, and finish with a concise suggestion for how the applicant might address these issues (e.g., paying down debt). This exercise builds the vital skill of bridging complex AI insights with user-friendly recommendations.
-</p>
-
----
-### **Assignment 4:** Plan a Model Monitoring Strategy
-<p style="text-align: justify;">
-<strong>Objective:</strong> Develop a systematic monitoring plan for a newly deployed demand-forecasting model in a chain of restaurants, ensuring the model stays accurate and relevant over a six-month horizon.
-</p>
-
-<p style="text-align: justify;">
-<strong>Task:</strong> Specify the data you will collect (e.g., daily predicted vs. actual demand), the metrics you will track over time (e.g., MAE, MAPE), and the thresholds or triggers that would prompt retraining or further investigation (e.g., MAPE over 15% for two consecutive weeks, sudden shifts in customer counts).
-</p>
-
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Establish automated pipelines that capture daily or weekly model predictions and actual outcomes. Calculate error metrics regularly and set alert thresholds for data drift or consistent under/over-forecasting (for instance, if the model routinely underestimates dinner demand by more than 20%). Incorporate seasonality considerations (e.g., holidays) and plan to retrain right after major events if patterns change. Include both quantitative markers (error rates) and qualitative input (feedback from restaurant managers). This assignment underscores the importance of sustaining model quality post-deployment.
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 2: Perform a Confusion Matrix Analysis</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Interpret a binary classification model’s performance through standard metrics—accuracy, precision, recall, and F1-score—and tie these results to a specific business setting (e-commerce purchase predictions).</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Task:</h3>
+    <p style="text-align: justify;">Using the confusion matrix results (50 true positives, 45 true negatives, 5 false positives, 10 false negatives), calculate and report accuracy, precision, recall, and F1-score. Then, interpret these findings in terms of missed opportunities, marketing costs, and potential adjustments to the model’s threshold or targeting strategies.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance</h3>
+    <p style="text-align: justify;">Begin by computing each metric: Accuracy = (TP + TN) / (TP + TN + FP + FN). Precision = TP / (TP + FP). Recall = TP / (TP + FN). F1-score = 2 × (Precision × Recall) / (Precision + Recall). Explain the business implications: missed purchasers represent lost revenue, while false positives might drive unnecessary marketing spend. Recommend whether the company should aim for higher recall or higher precision, considering the cost of promotional offers versus the cost of missing a sale. This step trains you to connect raw performance metrics to actual e-commerce outcomes and strategies.</p>
+  </div>
+</div>
 
 ---
-### **Assignment 5:** Conduct a Post-Mortem on a Model Failure
-<p style="text-align: justify;">
-<strong>Objective:</strong> Analyze why a churn-prediction model for a subscription service failed to reduce actual churn, even though its prediction accuracy was high, and propose targeted fixes for each identified root cause.
-</p>
 
-<p style="text-align: justify;">
-<strong>Task:</strong> List three plausible reasons the model might have disappointed in practice—for example, the intervention was ineffective, timing of predictions was too late, or unforeseen external factors invalidated historical patterns—and suggest one improvement for each. Summarize how these issues highlight the need for aligning prediction with meaningful action.
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 3: Create an Explainability Report</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Communicate the reasoning behind a black-box model’s decision in simple, actionable terms, using insights from an explainability tool (e.g., LIME or SHAP).</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Task:</h3>
+    <p style="text-align: justify;">Draft a brief (3–4 sentence) explanation of why a loan application was rejected, referencing key factors such as debt-to-income ratio and credit score. Propose one concrete step the applicant might take to improve their approval odds in the future (e.g., reduce debt, add a guarantor).</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Translate the AI’s local explanation into language that a non-technical loan officer or applicant can understand. Focus on clarity rather than technical jargon: for instance, “The high debt-to-income ratio signaled high risk, and a low credit score contributed to the rejection. However, adding a guarantor or choosing a shorter loan term could significantly reduce the risk profile.” Avoid judgmental phrases, and finish with a concise suggestion for how the applicant might address these issues (e.g., paying down debt). This exercise builds the vital skill of bridging complex AI insights with user-friendly recommendations.</p>
+  </div>
+</div>
 
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Consider scenarios such as a generic discount offer that failed to retain users, a model that flagged churn risk only after customers had mentally “checked out,” or model drift caused by new competitors. Propose concrete solutions, like testing a range of personalized retention strategies rather than a blanket discount or retraining the model with updated data including new behaviors. Note that even the best predictive accuracy cannot help if the wrong interventions or timings are used. This post-mortem approach illustrates that success in AI depends on the feedback loop between model predictions and real-world actions.
-</p>
+---
+
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 4: Plan a Model Monitoring Strategy</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Develop a systematic monitoring plan for a newly deployed demand-forecasting model in a chain of restaurants, ensuring the model stays accurate and relevant over a six-month horizon.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Task:</h3>
+    <p style="text-align: justify;">Specify the data you will collect (e.g., daily predicted vs. actual demand), the metrics you will track over time (e.g., MAE, MAPE), and the thresholds or triggers that would prompt retraining or further investigation (e.g., MAPE over 15% for two consecutive weeks, sudden shifts in customer counts).</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Establish automated pipelines that capture daily or weekly model predictions and actual outcomes. Calculate error metrics regularly and set alert thresholds for data drift or consistent under/over-forecasting (for instance, if the model routinely underestimates dinner demand by more than 20%). Incorporate seasonality considerations (e.g., holidays) and plan to retrain right after major events if patterns change. Include both quantitative markers (error rates) and qualitative input (feedback from restaurant managers). This assignment underscores the importance of sustaining model quality post-deployment.</p>
+  </div>
+</div>
+
+---
+
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 5: Conduct a Post-Mortem on a Model Failure</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Analyze why a churn-prediction model for a subscription service failed to reduce actual churn, even though its prediction accuracy was high, and propose targeted fixes for each identified root cause.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Task:</h3>
+    <p style="text-align: justify;">List three plausible reasons the model might have disappointed in practice—for example, the intervention was ineffective, timing of predictions was too late, or unforeseen external factors invalidated historical patterns—and suggest one improvement for each. Summarize how these issues highlight the need for aligning prediction with meaningful action.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Consider scenarios such as a generic discount offer that failed to retain users, a model that flagged churn risk only after customers had mentally “checked out,” or model drift caused by new competitors. Propose concrete solutions, like testing a range of personalized retention strategies rather than a blanket discount or retraining the model with updated data including new behaviors. Note that even the best predictive accuracy cannot help if the wrong interventions or timings are used. This post-mortem approach illustrates that success in AI depends on the feedback loop between model predictions and real-world actions.</p>
+  </div>
+</div>
 
 ---
 <p style="text-align: justify;">

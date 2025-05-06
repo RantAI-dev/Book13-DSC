@@ -12,9 +12,12 @@ toc: true
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Personalization is the key to cutting through the noise and making a meaningful connection with customers.</em>" — Angela Ahrendts</strong>
 {{% /alert %}}
+
+{{% alert icon="📘" context="success" %}}
 <p style="text-align: justify;">
 <em>In this chapter, we explore how data science powers customer personalization and operational efficiency in retail. We will examine recommendation engines, demand forecasting, dynamic pricing, customer segmentation, and supply chain optimization, illustrating each with real-world case studies. We’ll also discuss future trends—from hyper-personalized shopping to blockchain and IoT—that promise to further transform retail. The goal is to provide business leaders with a clear understanding of fundamental concepts, strategic frameworks, and practical applications of data science in retail. Each section outlines key ideas at three levels: fundamental principles, conceptual approaches, and practical implementations.</em>
 </p>
+{{% /alert %}}
 
 # 7.1. Introduction Data Science in Retail
 <p style="text-align: justify;">
@@ -454,54 +457,88 @@ To translate concepts into practice, here are five exercises with objectives and
 </p>
 
 ---
-### **Assignment 1:** Customer Persona Development from Data
-<p style="text-align: justify;">
-<strong>Objective:</strong> Create data-driven customer personas for a retail business by analyzing a sample customer dataset. This will help in understanding segmentation and personalization at a practical level.
-</p>
+<center>
 
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Imagine you have access to a dataset of customers with attributes like age, gender, total annual spend, number of purchases, favorite product categories, and whether they use online or in-store channels. (If actual data is not available, you can fabricate a small sample for this exercise.) Using this data, segment the customers into 3–5 personas. For each persona, summarize key characteristics (e.g., “Budget-minded Busy Parents: mid-30s, shop mainly in-store for groceries, responsive to discounts, moderate annual spend”). You can use simple tools: for example, sort and filter the data to find patterns, or use Excel’s pivot tables to see clusters (like age vs spend, or category preferences by group). The deliverable is a brief description of each persona and what marketing or service strategies you would recommend for each. This exercise reinforces how segmentation works and how raw data translates into actionable profiles.
-</p>
+## 🛠️ Assignments
 
----
-### **Assignment 2:** Market Basket Analysis
-<p style="text-align: justify;">
-<strong>Objective:</strong> Perform a basic market basket analysis to discover product affinities, simulating how recommendation engines suggest complementary products.
-</p>
-
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Take a sample of transactional data (or create one) with transactions and the items purchased in each transaction (for instance, Order 1001: items A, B, C; Order 1002: items A, D; etc.). Using either manual inspection or a simple association analysis, identify which products are frequently bought together. For instance, you might find that in 30% of purchases where “Coffee Maker” is bought, “Coffee Beans” are also bought. List 3–5 strong associations (“rules”) you discover (e.g., IF customer buys X, they often buy Y). Then, translate these into recommendation ideas (e.g., recommend Y on the website whenever someone views X). You can do this by tallying co-occurrences of items. More advanced (optional): use a spreadsheet or an analytics add-on to calculate support and confidence of association rules. The outcome will mimic the logic behind Amazon’s “Frequently Bought Together” suggestions and solidify understanding of collaborative filtering concepts.
-</p>
-
----
-### **Assignment 3:** Demand Forecasting Simulation
-<p style="text-align: justify;">
-<strong>Objective:</strong> Experience demand forecasting by building a simple predictive model (even a basic linear trend or moving average) and comparing it to actual outcomes.
-</p>
-
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Take historical sales data for a product (e.g., last 24 months of monthly sales for item X – you can assume some trend or seasonality and create a small table of values). Using that data, forecast the next 3 months’ sales. You could use a simple method like: average of last 3 months (moving average), or same month last year adjusted by overall growth rate, or even just a linear projection if there’s a clear upward trend. Document your method and rationale. Now, assume some “actual” sales for those 3 months (perhaps inject a surprise event like a stockout or a big promotion in one month) and see how your forecast would have performed (calculate forecast error%). Write a short reflection on what might improve the forecast (e.g., “If I had known about the promotion in advance, I’d have adjusted July’s forecast up.”). This exercise helps you appreciate the variables that go into forecasting and the challenges forecasters face, linking back to why AI models (which can consider promotions, seasonality, etc.) are valuable.
-</p>
+</center>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 1: Customer Persona Development from Data</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Create data-driven customer personas for a retail business by analyzing a sample customer dataset. This will help in understanding segmentation and personalization at a practical level.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Imagine you have access to a dataset of customers with attributes like age, gender, total annual spend, number of purchases, favorite product categories, and whether they use online or in-store channels. (If actual data is not available, you can fabricate a small sample for this exercise.) Using this data, segment the customers into 3–5 personas. For each persona, summarize key characteristics (e.g., “Budget-minded Busy Parents: mid-30s, shop mainly in-store for groceries, responsive to discounts, moderate annual spend”). You can use simple tools: for example, sort and filter the data to find patterns, or use Excel’s pivot tables to see clusters (like age vs spend, or category preferences by group). The deliverable is a brief description of each persona and what marketing or service strategies you would recommend for each. This exercise reinforces how segmentation works and how raw data translates into actionable profiles.</p>
+  </div>
+</div>
 
 ---
-### **Assignment 4:** Pricing Strategy Game
-<p style="text-align: justify;">
-<strong>Objective:</strong> Develop a simple dynamic pricing strategy for a product and simulate its effect on sales and profit, illustrating the concepts of price elasticity and competitor influence.
-</p>
 
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Choose a hypothetical product (say a winter coat) and define a baseline scenario: price = $100, and at that price, weekly sales are 100 units. Now imagine a competitor reduces their price; how might you respond? Create a small scenario analysis: If you drop price to $90, perhaps you expect sales to rise to 120 units (considering elasticity). At $80, maybe sales go to 140 units. Calculate revenue and perhaps profit (assume a cost per coat, say $50). Compare scenarios: $100 \<em> 100 vs $90 \</em> 120 vs $80 \* 140 in revenue (and similarly profit after cost). Which yields the best outcome? Also consider an opposite scenario: strong demand allows raising price – what happens at $110 with maybe 90 units sold? This “game” can be done in a spreadsheet. The goal is to see dynamic pricing in action and understand diminishing returns or sweet spots. Document your assumptions about how demand changes with price (that’s effectively an elasticity assumption). Write a brief recommendation based on your findings (e.g., “Our analysis suggests dropping price to $90 could increase total profits, but going to $80 starts to erode profit margins. A dynamic pricing strategy could float our price around $90–$100 depending on inventory levels and competitor moves.”). This practical task ties together concepts of pricing, elasticity, and competitive dynamics.
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 2: Market Basket Analysis</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Perform a basic market basket analysis to discover product affinities, simulating how recommendation engines suggest complementary products.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Take a sample of transactional data (or create one) with transactions and the items purchased in each transaction (for instance, Order 1001: items A, B, C; Order 1002: items A, D; etc.). Using either manual inspection or a simple association analysis, identify which products are frequently bought together. For instance, you might find that in 30% of purchases where “Coffee Maker” is bought, “Coffee Beans” are also bought. List 3–5 strong associations (“rules”) you discover (e.g., IF customer buys X, they often buy Y). Then, translate these into recommendation ideas (e.g., recommend Y on the website whenever someone views X). You can do this by tallying co-occurrences of items. More advanced (optional): use a spreadsheet or an analytics add-on to calculate support and confidence of association rules. The outcome will mimic the logic behind Amazon’s “Frequently Bought Together” suggestions and solidify understanding of collaborative filtering concepts.</p>
+  </div>
+</div>
 
 ---
-### **Assignment 5:** Store Efficiency Audit
-<p style="text-align: justify;">
-<strong>Objective:</strong> Conduct a mini operational efficiency audit for a retail store (this can be theoretical), identifying areas where data science tools could improve performance.
-</p>
 
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Think of a physical retail store environment (it could be a clothing store or a supermarket). List the main operational processes: inventory ordering, shelf replenishment, staff scheduling, checkout process, etc. For each, ask questions or gather simple data via observation (or assumption). For example: How often do popular items run out on shelves? Are there times when checkout lines get long? Do employees seem under-utilized at certain hours? Then, for at least 2 of these issues, propose a data-science solution. E.g., “Observed that shelves go empty for Item X by 4pm daily – a data-driven replenishment system could predict this and alert staff at 3:30pm to refill from the backroom,” or “Noticed long lines at 6pm – suggest implementing an analytics tool like Kroger’s which predicts and opens new registers preemptively.” If you have access to any store data (even sales by hour), use it to back up your observations. The deliverable is a short report or presentation outlining the inefficiencies and the potential AI/analytics solutions (like forecasting, IoT sensors, scheduling optimization). This assignment makes you step into the shoes of an operations manager and see how data and analytics can solve day-to-day retail challenges, reinforcing the value of operational efficiency initiatives.
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 3: Demand Forecasting Simulation</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Experience demand forecasting by building a simple predictive model (even a basic linear trend or moving average) and comparing it to actual outcomes.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Take historical sales data for a product (e.g., last 24 months of monthly sales for item X – you can assume some trend or seasonality and create a small table of values). Using that data, forecast the next 3 months’ sales. You could use a simple method like: average of last 3 months (moving average), or same month last year adjusted by overall growth rate, or even just a linear projection if there’s a clear upward trend. Document your method and rationale. Now, assume some “actual” sales for those 3 months (perhaps inject a surprise event like a stockout or a big promotion in one month) and see how your forecast would have performed (calculate forecast error%). Write a short reflection on what might improve the forecast (e.g., “If I had known about the promotion in advance, I’d have adjusted July’s forecast up.”). This exercise helps you appreciate the variables that go into forecasting and the challenges forecasters face, linking back to why AI models (which can consider promotions, seasonality, etc.) are valuable.</p>
+  </div>
+</div>
+
+---
+
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 4: Pricing Strategy Game</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Develop a simple dynamic pricing strategy for a product and simulate its effect on sales and profit, illustrating the concepts of price elasticity and competitor influence.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Choose a hypothetical product (say a winter coat) and define a baseline scenario: price = $100, and at that price, weekly sales are 100 units. Now imagine a competitor reduces their price; how might you respond? Create a small scenario analysis: If you drop price to $90, perhaps you expect sales to rise to 120 units (considering elasticity). At $80, maybe sales go to 140 units. Calculate revenue and perhaps profit (assume a cost per coat, say $50). Compare scenarios: $100 \<em> 100 vs $90 \</em> 120 vs $80 \* 140 in revenue (and similarly profit after cost). Which yields the best outcome? Also consider an opposite scenario: strong demand allows raising price – what happens at $110 with maybe 90 units sold? This “game” can be done in a spreadsheet. The goal is to see dynamic pricing in action and understand diminishing returns or sweet spots. Document your assumptions about how demand changes with price (that’s effectively an elasticity assumption). Write a brief recommendation based on your findings (e.g., “Our analysis suggests dropping price to $90 could increase total profits, but going to $80 starts to erode profit margins. A dynamic pricing strategy could float our price around $90–$100 depending on inventory levels and competitor moves.”). This practical task ties together concepts of pricing, elasticity, and competitive dynamics.</p>
+  </div>
+</div>
+
+---
+
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 5: Store Efficiency Audit</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Conduct a mini operational efficiency audit for a retail store (this can be theoretical), identifying areas where data science tools could improve performance.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Think of a physical retail store environment (it could be a clothing store or a supermarket). List the main operational processes: inventory ordering, shelf replenishment, staff scheduling, checkout process, etc. For each, ask questions or gather simple data via observation (or assumption). For example: How often do popular items run out on shelves? Are there times when checkout lines get long? Do employees seem under-utilized at certain hours? Then, for at least 2 of these issues, propose a data-science solution. E.g., “Observed that shelves go empty for Item X by 4pm daily – a data-driven replenishment system could predict this and alert staff at 3:30pm to refill from the backroom,” or “Noticed long lines at 6pm – suggest implementing an analytics tool like Kroger’s which predicts and opens new registers preemptively.” If you have access to any store data (even sales by hour), use it to back up your observations. The deliverable is a short report or presentation outlining the inefficiencies and the potential AI/analytics solutions (like forecasting, IoT sensors, scheduling optimization). This assignment makes you step into the shoes of an operations manager and see how data and analytics can solve day-to-day retail challenges, reinforcing the value of operational efficiency initiatives.</p>
+  </div>
+</div>
 
 ---
 <p style="text-align: justify;">

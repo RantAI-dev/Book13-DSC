@@ -12,9 +12,12 @@ toc: true
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Doesn’t matter how much data you have, it’s about how quickly you can turn that data into insights and actions. The financial players that can do that consistently are the ones that will dominate their markets.</em>" — From many experts</strong>
 {{% /alert %}}
+
+{{% alert icon="📘" context="success" %}}
 <p style="text-align: justify;">
 <em>This chapter explores how data science underpins two critical pillars of finance—risk management and customer insights—across banking, insurance, and capital markets. It begins by explaining how predictive analytics and machine learning enhance credit scoring and fraud detection, helping financial institutions reduce losses and comply with stringent regulatory standards. Next, it illustrates how customer analytics, including lifetime value models and personalized recommendations, lead to better segmentation, retention, and revenue growth. Core themes include data governance, ethics, and responsible AI, ensuring transparent risk modeling and equitable lending. Real-world case studies—such as HSBC’s AI-driven anti-money laundering platform—showcase tangible operational gains and competitive advantages. Finally, the chapter assesses emerging trends such as generative AI, blockchain, and open banking, emphasizing their potential to redefine the future of financial services.</em>
 </p>
+{{% /alert %}}
 
 # 6.1. Introduction to Data Science in Finance
 <p style="text-align: justify;">
@@ -454,54 +457,89 @@ To translate the concepts from this chapter into real-world skills and experienc
 </p>
 
 ---
-### **Assignment 1:** Credit Risk Model Development
-<p style="text-align: justify;">
-<strong>Objective:</strong> Build a simple credit risk prediction model (probability of default) using a dataset of loans, and interpret the results for decision-making.
-</p>
+<center>
 
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Use an open dataset such as the LendingClub loan data (commonly available on platforms like Kaggle). This dataset contains loan features (loan amount, income, purpose, etc.) and whether the loan was fully paid or defaulted. Split the data into training and testing sets. Train a logistic regression model (and/or a decision tree) to predict default. Evaluate the model’s performance using metrics like AUC (Area Under Curve) or accuracy, and check which features are most influential (coefficients for logistic regression, or feature importance for tree). Then, create a brief report as if to a credit manager: how would you use this model (e.g., setting a cutoff to approve/deny loans)? What are the model’s limitations (for example, certain groups of loans where it’s less accurate)? This exercise will give you a flavor of credit analytics and the balance between risk prediction and business implementation.
-</p>
+## 🛠️ Assignments
 
----
-### **Assignment 2:** Fraud Detection Analysis
-<p style="text-align: justify;">
-<strong>Objective:</strong> Apply anomaly detection techniques to identify potential fraudulent transactions in a synthetic dataset, and recommend a plan for investigation.
-</p>
+</center>
 
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Obtain or simulate a dataset of credit card transactions. There is a well-known public dataset of credit card transactions with a “fraud” label (the dataset by Pozzolo et al., often used in fraud detection research). Use Python or another tool to explore the data. Since fraud cases are rare, try an unsupervised approach: for instance, use clustering (k-means) or an isolation forest to detect outliers among transactions. You might also attempt a supervised approach if labels are available (train a classifier to distinguish fraud vs. normal). Plot some results – for example, use PCA to reduce data to two dimensions and visualize to see if fraud cases separate from normal ones. Deliverables could include a list of top anomalous transactions your method found. Assume the role of a fraud analyst: do those transactions look suspicious upon further inspection (e.g., odd times, high amounts in new locations)? Write a short memo on how you would integrate such an anomaly detection system into the fraud prevention workflow (considering false positives and the need for human review). This will give you insight into the challenges of catching fraud via data.
-</p>
-
----
-### **Assignment 3:** Customer Segmentation and LTV Calculation
-<p style="text-align: justify;">
-<strong>Objective:</strong> Perform a customer segmentation and calculate customer lifetime value (CLV) for different segments using a retail banking dataset, then propose segment-specific strategies.
-</p>
-
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Use a sample dataset of bank customers (you might fabricate one or use sample data from a data science repository). Ensure it has various features: demographics, product holdings, transaction volumes, tenure, etc. Using a tool like Excel, R, or Python, group customers into 3–5 segments. You could use k-means clustering on a few key variables (for example, age, number of products, average balance, digital engagement level). Next, attempt a simple CLV calculation: for each segment, estimate the average annual profit per customer (you may need to make assumptions or use proxy metrics like balances and fees) and the average customer longevity (perhaps inversely related to attrition rate). Discount future profits to present value with a chosen rate to get CLV. Now interpret the results: which segment has the highest CLV? Which has the lowest? Perhaps young customers have low current profit but high potential if they stay and take loans later. Based on this, propose one strategy for each segment (e.g., invest in digital services for millennials to increase retention, or cross-sell mortgage to mid-age segment). This exercise ties together segmentation, simple predictive modeling (of value), and strategic thinking.
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 1: Credit Risk Model Development</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Build a simple credit risk prediction model (probability of default) using a dataset of loans, and interpret the results for decision-making.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Use an open dataset such as the LendingClub loan data (commonly available on platforms like Kaggle). This dataset contains loan features (loan amount, income, purpose, etc.) and whether the loan was fully paid or defaulted. Split the data into training and testing sets. Train a logistic regression model (and/or a decision tree) to predict default. Evaluate the model’s performance using metrics like AUC (Area Under Curve) or accuracy, and check which features are most influential (coefficients for logistic regression, or feature importance for tree). Then, create a brief report as if to a credit manager: how would you use this model (e.g., setting a cutoff to approve/deny loans)? What are the model’s limitations (for example, certain groups of loans where it’s less accurate)? This exercise will give you a flavor of credit analytics and the balance between risk prediction and business implementation.</p>
+  </div>
+</div>
 
 ---
-### **Assignment 4:** Regulatory Compliance Dashboard
-<p style="text-align: justify;">
-<strong>Objective:</strong> Design a dashboard that could be used by a compliance officer to monitor key risk and compliance indicators in near real-time. This is more of a design and analysis exercise (no heavy coding required, unless desired to implement a prototype).
-</p>
 
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Imagine you have access to all of your bank’s data on transactions, alerts, capital ratios, etc. Sketch (on paper or PowerPoint or using a BI tool like Tableau) a dashboard layout. Include 4-6 key metrics that a Chief Risk/Compliance Officer would care about – for example: number of suspicious transaction alerts this week (vs. baseline), percentage of alerts resolved, current liquidity coverage ratio vs. regulatory requirement, number of cybersecurity intrusion attempts blocked today, etc. Use dummy numbers to illustrate it. The focus is on choosing relevant metrics and presenting them clearly (perhaps with visual cues like red/yellow/green status). Then write a brief explanation of why you chose those metrics and how frequently they should be updated. Optionally, if you have data, you could implement this in a BI tool using sample data. This assignment forces you to think about how data science outputs can be communicated effectively to senior management for decision-making and oversight.
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 2: Fraud Detection Analysis</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Apply anomaly detection techniques to identify potential fraudulent transactions in a synthetic dataset, and recommend a plan for investigation.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Obtain or simulate a dataset of credit card transactions. There is a well-known public dataset of credit card transactions with a “fraud” label (the dataset by Pozzolo et al., often used in fraud detection research). Use Python or another tool to explore the data. Since fraud cases are rare, try an unsupervised approach: for instance, use clustering (k-means) or an isolation forest to detect outliers among transactions. You might also attempt a supervised approach if labels are available (train a classifier to distinguish fraud vs. normal). Plot some results – for example, use PCA to reduce data to two dimensions and visualize to see if fraud cases separate from normal ones. Deliverables could include a list of top anomalous transactions your method found. Assume the role of a fraud analyst: do those transactions look suspicious upon further inspection (e.g., odd times, high amounts in new locations)? Write a short memo on how you would integrate such an anomaly detection system into the fraud prevention workflow (considering false positives and the need for human review). This will give you insight into the challenges of catching fraud via data.</p>
+  </div>
+</div>
 
 ---
-### **Assignment 5:** Fintech Case Study & Data Strategy
-<p style="text-align: justify;">
-<strong>Objective:</strong> Research a fintech company (or bank) known for innovative use of data (examples: Square/Block, Robinhood, Nubank, Revolut, etc.) and analyze its data strategy. Then, as a practical element, outline a data science project that could be implemented at a traditional bank inspired by that fintech’s approach.
-</p>
 
-<p style="text-align: justify;">
-<strong>Guidance:</strong> First, pick a fintech and gather information on how it uses data science – sources could be case studies, news articles, or the company’s own blog. Focus on a specific innovation (for instance, Nubank in Brazil uses AI for customer service and credit underwriting, or Ant Financial’s Sesame Credit scoring system). Summarize in one page: what they do, why it’s innovative, and what results/benefits it achieved. Next, flip the scenario: if you were a data science lead at a traditional bank, how could you adopt a similar approach? Outline a project with scope, needed data, and expected outcomes. For example, “Implement an AI chatbot for customer service that can answer 50% of queries automatically, using NLP – similar to what this fintech did. We will train it on our past chat logs.” Consider challenges like legacy systems or regulatory approval. This assignment blends research with practical project planning, giving you insight into real-world applications and how to drive innovation in an established organization.
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 3: Customer Segmentation and LTV Calculation</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Perform a customer segmentation and calculate customer lifetime value (CLV) for different segments using a retail banking dataset, then propose segment-specific strategies.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Use a sample dataset of bank customers (you might fabricate one or use sample data from a data science repository). Ensure it has various features: demographics, product holdings, transaction volumes, tenure, etc. Using a tool like Excel, R, or Python, group customers into 3–5 segments. You could use k-means clustering on a few key variables (for example, age, number of products, average balance, digital engagement level). Next, attempt a simple CLV calculation: for each segment, estimate the average annual profit per customer (you may need to make assumptions or use proxy metrics like balances and fees) and the average customer longevity (perhaps inversely related to attrition rate). Discount future profits to present value with a chosen rate to get CLV. Now interpret the results: which segment has the highest CLV? Which has the lowest? Perhaps young customers have low current profit but high potential if they stay and take loans later. Based on this, propose one strategy for each segment (e.g., invest in digital services for millennials to increase retention, or cross-sell mortgage to mid-age segment). This exercise ties together segmentation, simple predictive modeling (of value), and strategic thinking.</p>
+  </div>
+</div>
+
+---
+
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 4: Regulatory Compliance Dashboard</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Design a dashboard that could be used by a compliance officer to monitor key risk and compliance indicators in near real-time. This is more of a design and analysis exercise (no heavy coding required, unless desired to implement a prototype).</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Imagine you have access to all of your bank’s data on transactions, alerts, capital ratios, etc. Sketch (on paper or PowerPoint or using a BI tool like Tableau) a dashboard layout. Include 4-6 key metrics that a Chief Risk/Compliance Officer would care about – for example: number of suspicious transaction alerts this week (vs. baseline), percentage of alerts resolved, current liquidity coverage ratio vs. regulatory requirement, number of cybersecurity intrusion attempts blocked today, etc. Use dummy numbers to illustrate it. The focus is on choosing relevant metrics and presenting them clearly (perhaps with visual cues like red/yellow/green status). Then write a brief explanation of why you chose those metrics and how frequently they should be updated. Optionally, if you have data, you could implement this in a BI tool using sample data. This assignment forces you to think about how data science outputs can be communicated effectively to senior management for decision-making and oversight.</p>
+  </div>
+</div>
+
+---
+
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 5: Fintech Case Study & Data Strategy</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Research a fintech company (or bank) known for innovative use of data (examples: Square/Block, Robinhood, Nubank, Revolut, etc.) and analyze its data strategy. Then, as a practical element, outline a data science project that could be implemented at a traditional bank inspired by that fintech’s approach.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">First, pick a fintech and gather information on how it uses data science – sources could be case studies, news articles, or the company’s own blog. Focus on a specific innovation (for instance, Nubank in Brazil uses AI for customer service and credit underwriting, or Ant Financial’s Sesame Credit scoring system). Summarize in one page: what they do, why it’s innovative, and what results/benefits it achieved. Next, flip the scenario: if you were a data science lead at a traditional bank, how could you adopt a similar approach? Outline a project with scope, needed data, and expected outcomes. For example, “Implement an AI chatbot for customer service that can answer 50% of queries automatically, using NLP – similar to what this fintech did. We will train it on our past chat logs.” Consider challenges like legacy systems or regulatory approval. This assignment blends research with practical project planning, giving you insight into real-world applications and how to drive innovation in an established organization.</p>
+  </div>
+</div>
 
 ---
 <p style="text-align: justify;">

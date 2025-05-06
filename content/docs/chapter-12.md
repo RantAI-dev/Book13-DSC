@@ -12,9 +12,13 @@ toc: true
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>In the commercial use of AI, the ‘rocket science’ has turned out to be the easy part. The challenge is getting it launched.</em>" — Eric Siegel</strong>
 {{% /alert %}}
+
+{{% alert icon="📘" context="success" %}}
 <p style="text-align: justify;">
 <em>Data science initiatives often shine in controlled pilot projects but stumble when scaling to real-world production. This chapter examines why so many promising proofs of concept never achieve broad deployment, and how organizations can bridge that “last mile” from pilot to production. We explore the common business, technical, and organizational hurdles that hinder scaling, and outline strategies to overcome them. Through insights and examples from finance, healthcare, manufacturing, supply chain, distribution, and logistics, readers will learn how to align projects with business goals, build a strong data foundation, manage change, and institute ongoing model governance. The key takeaway is that success in enterprise AI requires not just building a good model, but integrating it into people, processes, and strategy to deliver lasting business value.</em>
 </p>
+{{% /alert %}}
+
 
 # 12.1. Data Science Implementation Challenges
 <p style="text-align: justify;">
@@ -490,95 +494,253 @@ To solidify your understanding of moving data science projects from pilot to pro
 </p>
 
 ---
-### **Assignment 1:** Case Study Analysis – Pilot to Production Failure
-<p style="text-align: justify;">
-<strong>Objective:</strong> Identify reasons why AI projects fail to scale and propose remedies.
-</p>
+<center>
 
-<p style="text-align: justify;">
-<strong>Task:</strong> Research a real case (or use a detailed hypothetical scenario) where a company’s AI project succeeded in pilot but failed to reach full production deployment. Write a brief case study (1-2 pages) describing the project, its goals, and outcomes. Then analyze at least three reasons that impeded scaling (e.g., lack of executive support, data issues, user pushback). For each reason, provide specific evidence or quotes from the case. Finally, propose what the company could have done differently to avoid “pilot purgatory.”
-</p>
+## 🛠️ Assignments
 
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Choose a case from an industry you’re interested in (finance, healthcare, etc.). If details are scant, make reasonable assumptions to flesh out the scenario. In your analysis, tie reasons to concepts from the chapter (for instance, if the issue was no clear ROI, relate it to the importance of business objectives). When proposing remedies, be concrete: e.g., “implement a cross-functional steering committee after pilot to oversee scaling, which might have caught issue X early.” Ensure your case study has a clear narrative: what was tried, what happened, why it failed, and lessons learned.
-</p>
+</center>
 
----
-### **Assignment 2:** Project Planning Workshop
-<p style="text-align: justify;">
-<strong>Objective:</strong> Practice planning an AI project with alignment and deployment in mind.
-</p>
-
-<p style="text-align: justify;">
-<strong>Task:</strong> Imagine you are leading a workshop to plan a new data science initiative for a retailer aiming to use AI for personalized marketing. Create a presentation (4-5 slides or a written plan) covering the following:
-</p>
-
-- <p style="text-align: justify;">Project Objective and scope (what business goal, which data, which channels of marketing)</p>
-- <p style="text-align: justify;">Stakeholders to involve (list departments/roles and their interests)</p>
-- <p style="text-align: justify;">Data requirements and initial assessment (what data is needed, any quality or privacy concerns)</p>
-- <p style="text-align: justify;">Pilot design (how will you test the idea – outline the pilot’s size, duration, and success metrics)</p>
-- <p style="text-align: justify;">Deployment considerations (what would it take to implement fully if pilot succeeds – think about systems integration, team capabilities, etc.)</p>
-<p style="text-align: justify;">
-<strong>Guidance:</strong> This is about simulating upfront planning. Ensure each section is informed by best practices: for example, in stakeholders, mention aligning IT and marketing teams; in data, note governance steps for customer data privacy (very relevant for personalized marketing). For success metrics, consider both model performance (click-through rate prediction accuracy) and business outcome (increase in sales from targeted campaigns). In deployment, mention needing a marketing automation system integration. The goal is to show you can plan not just the data science part but the whole lifecycle. Your presentation/plan should be concise but specific, as if proposing the project to an executive committee for approval.
-</p>
-
----
-### **Assignment 3:** Develop a Monitoring & Maintenance Playbook
-<p style="text-align: justify;">
-<strong>Objective:</strong> Learn to create a plan for post-deployment model management (MLOps).
-</p>
-
-<p style="text-align: justify;">
-<strong>Task:</strong> You have deployed an AI model for dynamic pricing in an airline (it adjusts ticket prices based on various factors). Now, create a “Model Monitoring and Maintenance Playbook” (approximately 1 page or flow diagram) that outlines how you will:
-</p>
-
-- <p style="text-align: justify;">Monitor model performance (what metrics will you track? e.g., revenue vs. forecast, booking conversion rates, model prediction error).</p>
-- <p style="text-align: justify;">Detect and handle data or concept drift (describe any drift detection technique and threshold that would trigger action).</p>
-- <p style="text-align: justify;">Retrain or update the model (how often will you retrain? what data will you use? is it automated or manual retraining with approval?).</p>
-- <p style="text-align: justify;">Govern changes (who reviews/approves model updates? how will you document versions? how to roll back if an update underperforms?).</p>
-- <p style="text-align: justify;">Ensure compliance and fairness (any audit checks, e.g., ensure prices don’t become discriminatory or violate regulations).</p>
-<p style="text-align: justify;">
-<strong>Guidance:</strong> This playbook can be in bullet form but should cover the lifecycle after initial deployment. Use airline context specifics: for instance, sudden events like a pandemic drastically change travel demand – your drift detection should catch that (e.g., model’s error spikes beyond X% for Y days). For retraining, maybe plan monthly retraining using the latest 3 months of data, but also have a procedure for emergency retraining if drift is detected. Include roles (data science team, pricing managers, IT ops) in the governance part. The playbook should read like a SOP (standard operating procedure) for keeping the pricing model healthy and aligned with business strategy continuously.
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 1: Case Study Analysis – Pilot to Production Failure</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Identify reasons why AI projects fail to scale and propose remedies.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Tasks:</h3>
+    <div class="table-responsive mt-2">
+      <table class="table table-bordered table-striped">
+        <thead class="table-light">
+          <tr>
+            <th scope="col" style="width: 30%;">Aspect</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Analyze Failure & Propose Fixes:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Research a real case (or use a detailed hypothetical scenario) where a company’s AI project succeeded in pilot but failed to reach full production deployment. Write a brief case study (1-2 pages) describing the project, its goals, and outcomes. Then analyze at least three reasons that impeded scaling (e.g., lack of executive support, data issues, user pushback). For each reason, provide specific evidence or quotes from the case. Finally, propose what the company could have done differently to avoid “pilot purgatory.”</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Choose a case from an industry you’re interested in (finance, healthcare, etc.). If details are scant, make reasonable assumptions to flesh out the scenario. In your analysis, tie reasons to concepts from the chapter (for instance, if the issue was no clear ROI, relate it to the importance of business objectives). When proposing remedies, be concrete: e.g., “implement a cross-functional steering committee after pilot to oversee scaling, which might have caught issue X early.” Ensure your case study has a clear narrative: what was tried, what happened, why it failed, and lessons learned.</p>
+  </div>
+</div>
 
 ---
-### **Assignment 4:** ROI and Scaling Justification Memo
-<p style="text-align: justify;">
-<strong>Objective:</strong> Practice financial justification and scaling strategy for an AI project.
-</p>
 
-<p style="text-align: justify;">
-<strong>Task:</strong> Write a professional memo (approx. 500 words) to your company’s CFO and CIO advocating for the budget to scale a pilot AI project company-wide. Choose a pilot scenario, for example: a logistics company piloted a route optimization AI in one region and saw 8% fuel cost reduction. In the memo, include:
-</p>
-
-- <p style="text-align: justify;">A summary of pilot results (benefits achieved, costs of pilot).</p>
-- <p style="text-align: justify;">Projected benefits of full deployment (use pilot data to extrapolate, e.g., “if 8% savings in one region, we expect 5-7% in others, totaling $X million annually”).</p>
-- <p style="text-align: justify;">Required investment for scaling (new equipment, software, hiring, training, etc., with rough cost estimates).</p>
-- <p style="text-align: justify;">Calculation of ROI or NPV over a 3-year horizon (show the expected return vs. investment; it can be rough but should show positive returns and payback period).</p>
-- <p style="text-align: justify;">Risk analysis (what could affect these outcomes – e.g., model might perform lower in some regions – and how you plan to mitigate, like phased rollout to adjust model per region).</p>
-<p style="text-align: justify;">
-<strong>Guidance:</strong> Write in a persuasive, concise business style. The memo should hit the key points a CFO/CIO cares about: value, cost, time frame, and risks. Use numbers wherever possible. You might say “Pilot in Region A saved $500k in fuel in 6 months. Scaling to 5 regions, we conservatively estimate $3M savings/year. Required one-time investment is $1M in IT infrastructure and $200k in training, plus $100k incremental operating costs annually. Thus, net first-year benefit \~$1.7M, growing as optimization improves.” Include a simple table if needed to clarify the math. Addressing risk, you might note e.g., “If actual savings are only half of pilot rate, ROI would drop, but even at 4% savings, we break even in 18 months.” End with a clear recommendation to fund the project, highlighting strategic benefits (e.g., sustainability gains from fuel efficiency, competitive edge, etc., in addition to pure cost savings).
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 2: Project Planning Workshop</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Practice planning an AI project with alignment and deployment in mind.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Tasks:</h3>
+     <div class="table-responsive mt-2">
+      <table class="table table-bordered table-striped">
+        <thead class="table-light">
+          <tr>
+            <th scope="col" style="width: 30%;">Aspect</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Deliverable:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Create a presentation (4-5 slides or a written plan) covering the following points for a new AI personalized marketing initiative at a retailer.</p></td>
+          </tr>
+          <tr>
+            <td><strong>1. Project Objective & Scope:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Define the business goal, specify which data sources will be used, and outline the marketing channels involved.</p></td>
+          </tr>
+          <tr>
+            <td><strong>2. Stakeholders Involved:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">List the key departments and roles (e.g., Marketing, IT, Data Science, Legal) and outline their respective interests and contributions.</p></td>
+          </tr>
+           <tr>
+            <td><strong>3. Data Requirements & Assessment:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Specify the data needed for personalization and perform an initial assessment regarding its availability, quality, and any associated privacy concerns.</p></td>
+          </tr>
+           <tr>
+            <td><strong>4. Pilot Design:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Outline how the concept will be tested – describe the pilot's scope (e.g., customer segment, duration), methodology (e.g., A/B test), and success metrics (e.g., conversion lift).</p></td>
+          </tr>
+           <tr>
+            <td><strong>5. Deployment Considerations:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Describe the necessary steps for a full implementation if the pilot is successful, including system integrations, team capabilities, and potential rollout challenges.</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">This is about simulating upfront planning. Ensure each section is informed by best practices: for example, in stakeholders, mention aligning IT and marketing teams; in data, note governance steps for customer data privacy (very relevant for personalized marketing). For success metrics, consider both model performance (click-through rate prediction accuracy) and business outcome (increase in sales from targeted campaigns). In deployment, mention needing a marketing automation system integration. The goal is to show you can plan not just the data science part but the whole lifecycle. Your presentation/plan should be concise but specific, as if proposing the project to an executive committee for approval.</p>
+  </div>
+</div>
 
 ---
-### **Assignment 5:** Simulation of Cross-Functional Project Kickoff
-<p style="text-align: justify;">
-<strong>Objective:</strong> Apply interdisciplinary coordination skills for AI projects.
-</p>
 
-<p style="text-align: justify;">
-<strong>Task:</strong> Conduct (or script out) a mock kickoff meeting for a cross-functional team at the start of an AI project. The project can be any (for example, an AI-driven quality control in manufacturing). Include participants from data science, IT, business unit, and compliance. Your assignment deliverable can be in one of two formats:
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 3: Develop a Monitoring & Maintenance Playbook</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Learn to create a plan for post-deployment model management (MLOps).</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Tasks:</h3>
+    <div class="table-responsive mt-2">
+      <table class="table table-bordered table-striped">
+        <thead class="table-light">
+          <tr>
+            <th scope="col" style="width: 30%;">Aspect</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+           <tr>
+            <td><strong>Deliverable:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Create a “Model Monitoring and Maintenance Playbook” (approximately 1 page or flow diagram) for an AI dynamic pricing model deployed by an airline.</p></td>
+          </tr>
+          <tr>
+            <td><strong>1. Monitor Performance:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Define key metrics to track (e.g., revenue vs. forecast, booking conversion rates, model prediction error, price volatility).</p></td>
+          </tr>
+          <tr>
+            <td><strong>2. Detect & Handle Drift:</strong></td>
+             <td><p style="text-align: justify; margin-bottom: 0;">Describe a drift detection technique (e.g., monitoring input data distribution or output prediction distribution) and the threshold that would trigger investigation or action.</p></td>
+          </tr>
+           <tr>
+            <td><strong>3. Retrain/Update Model:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Specify the retraining frequency (e.g., monthly), the data to be used (e.g., latest 3 months), and whether retraining is automated or requires manual approval.</p></td>
+          </tr>
+           <tr>
+            <td><strong>4. Govern Changes:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Outline who reviews and approves model updates, how model versions are documented, and the process for rolling back if an update causes issues.</p></td>
+          </tr>
+           <tr>
+            <td><strong>5. Ensure Compliance & Fairness:</strong></td>
+             <td><p style="text-align: justify; margin-bottom: 0;">Include necessary audit checks to ensure pricing does not become discriminatory or violate regulations.</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">This playbook can be in bullet form but should cover the lifecycle after initial deployment. Use airline context specifics: for instance, sudden events like a pandemic drastically change travel demand – your drift detection should catch that (e.g., model’s error spikes beyond X% for Y days). For retraining, maybe plan monthly retraining using the latest 3 months of data, but also have a procedure for emergency retraining if drift is detected. Include roles (data science team, pricing managers, IT ops) in the governance part. The playbook should read like a SOP (standard operating procedure) for keeping the pricing model healthy and aligned with business strategy continuously.</p>
+  </div>
+</div>
 
-- <p style="text-align: justify;">A written dialogue/script (at least 1-2 pages) where team members discuss project goals, concerns, and roles.</p>
-- <p style="text-align: justify;">Or a meeting agenda with detailed notes/minutes that capture each stakeholder’s input and decisions made.\</p>
-<p style="text-align: justify;">
-Key points to cover: clarify the project’s objective and success criteria (business lead does this), discuss data availability and issues (data engineer chimes in), identify potential implementation challenges (IT lead discusses integration, scaling), address regulatory or ethical concerns (compliance officer input), and agree on next steps and responsibilities.
-</p>
+---
 
-<p style="text-align: justify;">
-<strong>Guidance:</strong> This is to simulate the early alignment process. If doing a script, try to make the voices realistic (e.g., the compliance officer might say “Have we considered how we’ll audit the decisions? We need logging.” The operations manager might say “Operators on the line need a simple interface, or they won’t use this.”). If doing an agenda+notes, list topics like “1. Objectives (presented by …) – Decision: agreed target is to reduce defect rate by 15% in pilot)” etc. The outcome should show a comprehensive view of planning: each function raises relevant questions (data, tech, process, compliance, ROI) and the team aligns on how to handle them. The exercise forces you to think from multiple perspectives, reinforcing the importance of cross-functional collaboration.
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 4: ROI and Scaling Justification Memo</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Practice financial justification and scaling strategy for an AI project.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Tasks:</h3>
+    <div class="table-responsive mt-2">
+      <table class="table table-bordered table-striped">
+        <thead class="table-light">
+          <tr>
+            <th scope="col" style="width: 30%;">Aspect</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Deliverable:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Write a professional memo (approx. 500 words) to the CFO and CIO advocating for budget to scale a successful pilot AI project (e.g., route optimization showing 8% fuel savings) company-wide.</p></td>
+          </tr>
+          <tr>
+            <td><strong>1. Summary of Pilot Results:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Detail the benefits achieved during the pilot phase and specify the costs incurred.</p></td>
+          </tr>
+          <tr>
+            <td><strong>2. Projected Scaling Benefits:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Extrapolate the pilot results to estimate company-wide benefits (e.g., total annual savings or revenue increase), stating assumptions clearly.</p></td>
+          </tr>
+           <tr>
+            <td><strong>3. Required Investment:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">List the necessary investments for scaling, including equipment, software, hiring, training, and provide rough cost estimates.</p></td>
+          </tr>
+           <tr>
+            <td><strong>4. ROI Calculation:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Calculate the expected ROI or NPV over a 3-year horizon, demonstrating positive returns and showing the payback period. Use tables/graphs if helpful.</p></td>
+          </tr>
+           <tr>
+            <td><strong>5. Risk Analysis:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Identify potential risks that could affect outcomes during scaling (e.g., lower performance in different regions) and outline mitigation plans (e.g., phased rollout).</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">Write in a persuasive, concise business style. The memo should hit the key points a CFO/CIO cares about: value, cost, time frame, and risks. Use numbers wherever possible. You might say “Pilot in Region A saved $500k in fuel in 6 months. Scaling to 5 regions, we conservatively estimate $3M savings/year. Required one-time investment is $1M in IT infrastructure and $200k in training, plus $100k incremental operating costs annually. Thus, net first-year benefit ~$1.7M, growing as optimization improves.” Include a simple table if needed to clarify the math. Addressing risk, you might note e.g., “If actual savings are only half of pilot rate, ROI would drop, but even at 4% savings, we break even in 18 months.” End with a clear recommendation to fund the project, highlighting strategic benefits (e.g., sustainability gains from fuel efficiency, competitive edge, etc., in addition to pure cost savings).</p>
+  </div>
+</div>
+
+---
+
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 5: Simulation of Cross-Functional Project Kickoff</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Apply interdisciplinary coordination skills for AI projects.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Tasks:</h3>
+     <div class="table-responsive mt-2">
+      <table class="table table-bordered table-striped">
+        <thead class="table-light">
+          <tr>
+            <th scope="col" style="width: 30%;">Aspect</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Scenario & Deliverable:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Conduct (or script out) a mock kickoff meeting for a cross-functional team starting an AI project (e.g., AI-driven quality control in manufacturing). Include participants from data science, IT, business unit, and compliance. Choose one format: (a) written dialogue/script (1-2 pages) OR (b) meeting agenda with detailed notes/minutes.</p></td>
+          </tr>
+          <tr>
+            <td><strong>Key Points to Cover:</strong></td>
+             <td><p style="text-align: justify; margin-bottom: 0;">Ensure the discussion covers: clarifying the project’s objective and success criteria (led by business); discussing data availability and issues (led by data engineer); identifying implementation challenges (led by IT); addressing regulatory/ethical concerns (led by compliance); and agreeing on next steps and responsibilities for all participants.</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <p style="text-align: justify;">This is to simulate the early alignment process. If doing a script, try to make the voices realistic (e.g., the compliance officer might say “Have we considered how we’ll audit the decisions? We need logging.” The operations manager might say “Operators on the line need a simple interface, or they won’t use this.”). If doing an agenda+notes, list topics like “1. Objectives (presented by …) – Decision: agreed target is to reduce defect rate by 15% in pilot)” etc. The outcome should show a comprehensive view of planning: each function raises relevant questions (data, tech, process, compliance, ROI) and the team aligns on how to handle them. The exercise forces you to think from multiple perspectives, reinforcing the importance of cross-functional collaboration.</p>
+  </div>
+</div>
 
 ---
 <p style="text-align: justify;">

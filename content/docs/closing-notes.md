@@ -2,13 +2,16 @@
 weight: 2000
 title: "Closing Notes"
 description: "Future business execution is a scientific problem solving!"
-icon: "article"
+icon: "done"
 date: "2025-05-04T17:45:47.556614+07:00"
 lastmod: "2025-05-04T17:45:47.556636+07:00"
 katex: true
 draft: false
 toc: true
 ---
+
+{{% alert icon="📘" context="success" %}}
+
 <p style="text-align: justify;">
 It is a rare moment in history when multiple technological advances converge to reshape the core fabric of business itself. Artificial Intelligence, bolstered by the unprecedented volume of digital data now available, is fundamentally redefining how we make decisions, how we execute strategic initiatives, and ultimately, how we sustain competitive advantages in an ever-shifting marketplace. <em>Data Science for Commercial</em>, addresses this decisive inflection point with both clarity and depth, expertly exploring the idea that future business execution is, indeed, a scientific problem-solving endeavor.
 </p>
@@ -41,6 +44,14 @@ I invite every current and aspiring leader to delve into this book with an open 
 Congratulations on choosing to invest in your own evolution. May your journey be inspired, insightful, and ultimately transformative. After all, the future of commercial strategy belongs to those willing to experiment, innovate, and rigorously apply data-driven insights in every aspect of business execution. This book is your roadmap, and the summit of AI-driven excellence is within reach. I look forward to celebrating your success as you climb to the top.
 </p>
 
-<p style="text-align: justify;">
-<strong>Dr. Risman Adnan Mattotorang</strong>
-</p>
+<center>  
+Bandung, May 2025  
+
+&nbsp;  
+
+&nbsp;  
+
+<strong>Dr. Risman Adnan Mattotorang</strong>  
+</center>
+
+{{% /alert %}}

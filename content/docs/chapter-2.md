@@ -12,9 +12,12 @@ toc: true
 {{% alert icon="💡" context="info" %}}
 <strong>"<em>Without data, you’re just another person with an opinion.</em>" — W. Edwards Deming</strong>
 {{% /alert %}}
+
+{{% alert icon="📘" context="success" %}}
 <p style="text-align: justify;">
 <em>This chapter explains that data science is an interdisciplinary field combining statistics, computing, and domain knowledge to extract insights from data, and it emphasizes why this matters for executives in strategic terms. It systematically walks through key concepts such as big data and the spectrum of analytics (descriptive, predictive, prescriptive), and it outlines the data science process (from defining business problems to collecting data, modeling, and deploying solutions) in a way that connects technical steps to business outcomes. Through well-researched case studies and examples, it illustrates practical applications across marketing, finance, operations, and more. The chapter also tackles the crucial roles, team structures, and cultural factors needed to implement data science, underlining the importance of data-driven decision-making and leadership’s role in fostering a supportive, ethical data culture. Recognizing that leveraging data comes with responsibilities, it covers data ethics, privacy, and governance, advising on how to manage risks like bias and ensure compliance with regulations such as GDPR. In sum, this chapter equips business leaders with a clear understanding of data science fundamentals and best practices, enabling them to champion analytics initiatives confidently and align them with company strategy for maximum impact. It sets the stage for deeper exploration in subsequent chapters by establishing why data science is a cornerstone of modern competitive advantage and how to lay the groundwork for successful data-driven transformation.</em>
 </p>
+{{% /alert %}}
 
 # 2.1. Introduction to Data Science in Business
 <p style="text-align: justify;">
@@ -362,140 +365,231 @@ While knowledge is vital, there is no substitute for hands-on experience when it
 </p>
 
 ---
-### **Assignment 1:** Data Opportunity Assessment
-<p style="text-align: justify;">
-<strong>Objective:</strong> Identify a high-impact business problem that can be addressed with data science, ensuring it aligns with your organization’s strategic goals and available resources.
-</p>
+<center>
 
-<p style="text-align: justify;">
-<strong>Task:</strong> Consult at least two departments (e.g., marketing, operations) to understand their pressing challenges or opportunities. Select one specific problem (e.g., reducing customer churn, optimizing delivery routes) and formulate a clear question that data science could answer—such as “Which customers are most likely to churn next quarter?” or “How can we minimize transportation costs in distribution?” Document the data you currently have and the data you might need. Outline how you would measure success, including both intermediate analytical metrics (e.g., model accuracy) and business KPIs (e.g., churn rate decrease, cost savings).
-</p>
+## 🛠️ Assignments
 
-<p style="text-align: justify;">
-<strong>Guidance:</strong>
-</p>
+</center>
 
-- <p style="text-align: justify;"><strong>Steps to Complete:</strong></p>
-- <p style="text-align: justify;">Conduct informal interviews or meetings with stakeholders from different departments to gather potential problem areas.</p>
-- <p style="text-align: justify;">Choose a problem that is both significant (substantial impact on revenue, cost, or customer experience) and realistically solvable with data science methods given your existing data and resources.</p>
-- <p style="text-align: justify;">Write down the business question to be answered and identify the data sources (internal or external) that could be relevant.</p>
-- <p style="text-align: justify;">Specify the success metrics—for instance, a target reduction in churn or a percentage decrease in operational costs.</p>
-- <p style="text-align: justify;"><strong>Evaluation:</strong></p>
-- <p style="text-align: justify;">Assess the potential impact of solving this problem: is it worth the investment of time and resources?</p>
-- <p style="text-align: justify;">Determine if the necessary data is sufficiently available and of acceptable quality. If not, note the gaps.</p>
-- <p style="text-align: justify;">Confirm stakeholder support—are the relevant departments willing to provide data and collaborate?</p>
-- <p style="text-align: justify;"><strong>Refinement:</strong></p>
-- <p style="text-align: justify;">If data or resource gaps are identified, propose an action plan (e.g., collect more data, hire a data analyst, pilot with a smaller scope).</p>
-- <p style="text-align: justify;">Revise the problem statement or success metrics if needed to better reflect feasibility or organizational priorities.</p>
-- <p style="text-align: justify;">Seek feedback from a business mentor or analytics professional to ensure your plan is realistic and aligned with broader strategy.</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 1: Data Opportunity Assessment</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Identify a high-impact business problem that can be addressed with data science, ensuring it aligns with your organization’s strategic goals and available resources.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Task:</h3>
+    <p style="text-align: justify;">Consult at least two departments (e.g., marketing, operations) to understand their pressing challenges or opportunities. Select one specific problem (e.g., reducing customer churn, optimizing delivery routes) and formulate a clear question that data science could answer—such as “Which customers are most likely to churn next quarter?” or “How can we minimize transportation costs in distribution?” Document the data you currently have and the data you might need. Outline how you would measure success, including both intermediate analytical metrics (e.g., model accuracy) and business KPIs (e.g., churn rate decrease, cost savings).</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <div class="table-responsive mt-2">
+      <table class="table table-bordered table-striped">
+        <thead class="table-light">
+          <tr>
+            <th scope="col" style="width: 25%;">Aspect</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Steps to Complete:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Conduct informal interviews or meetings with stakeholders from different departments to gather potential problem areas. Choose a problem that is both significant (substantial impact on revenue, cost, or customer experience) and realistically solvable with data science methods given your existing data and resources. Write down the business question to be answered and identify the data sources (internal or external) that could be relevant. Specify the success metrics—for instance, a target reduction in churn or a percentage decrease in operational costs.</p></td>
+          </tr>
+          <tr>
+            <td><strong>Evaluation:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Assess the potential impact of solving this problem: is it worth the investment of time and resources? Determine if the necessary data is sufficiently available and of acceptable quality. If not, note the gaps. Confirm stakeholder support—are the relevant departments willing to provide data and collaborate?</p></td>
+          </tr>
+          <tr>
+            <td><strong>Refinement:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">If data or resource gaps are identified, propose an action plan (e.g., collect more data, hire a data analyst, pilot with a smaller scope). Revise the problem statement or success metrics if needed to better reflect feasibility or organizational priorities. Seek feedback from a business mentor or analytics professional to ensure your plan is realistic and aligned with broader strategy.</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
 ---
-### **Assignment 2:** Data-Driven Decision Case Study
-<p style="text-align: justify;">
-<strong>Objective:</strong> Evaluate how data science could improve a past business decision, illuminating how analytical insights can alter outcomes and guide better strategies.
-</p>
 
-<p style="text-align: justify;">
-<strong>Task:</strong> Select a notable decision within your organization—or, if unavailable, a well-known industry case. Document how the decision was originally made (e.g., based on intuition, limited data). Then, reconstruct a hypothetical data-driven approach by identifying what data and methods could have been used. Explain how the analysis might have changed the decision or outcome, offering lessons for future endeavors.
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 2: Data-Driven Decision Case Study</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Evaluate how data science could improve a past business decision, illuminating how analytical insights can alter outcomes and guide better strategies.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Task:</h3>
+    <p style="text-align: justify;">Select a notable decision within your organization—or, if unavailable, a well-known industry case. Document how the decision was originally made (e.g., based on intuition, limited data). Then, reconstruct a hypothetical data-driven approach by identifying what data and methods could have been used. Explain how the analysis might have changed the decision or outcome, offering lessons for future endeavors.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <div class="table-responsive mt-2">
+      <table class="table table-bordered table-striped">
+        <thead class="table-light">
+          <tr>
+            <th scope="col" style="width: 25%;">Aspect</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Steps to Complete:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Pick a past decision with tangible results or a clear outcome (e.g., launching a new product line, changing pricing strategy). Gather as much information as possible about the original decision process—sources of information, rationale used, and final results. Hypothesize how data science techniques (e.g., regression, forecasting, segmentation) could have offered deeper insights. If feasible, perform a simplified analysis with any available data, showcasing what might have been discovered.</p></td>
+          </tr>
+          <tr>
+            <td><strong>Evaluation:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Compare the actual outcome to the hypothetical data-driven outcome. Identify gaps or assumptions in your reconstruction—did you have sufficient data or resources at the time? Reflect on the alignment of the hypothetical result with the company’s strategic goals.</p></td>
+          </tr>
+          <tr>
+            <td><strong>Refinement:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Outline recommendations for integrating data science into future decision-making: possible pilot tests, improved data collection, or stakeholder involvement. Discuss how you’d address the challenges (cultural resistance, data quality, etc.) that may have hindered a data-driven approach originally. Present your findings to a colleague or department head and gather feedback on how these insights can inform upcoming projects.</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
-<p style="text-align: justify;">
-<strong>Guidance:</strong>
-</p>
-
-- <p style="text-align: justify;"><strong>Steps to Complete:</strong></p>
-- <p style="text-align: justify;">Pick a past decision with tangible results or a clear outcome (e.g., launching a new product line, changing pricing strategy).</p>
-- <p style="text-align: justify;">Gather as much information as possible about the original decision process—sources of information, rationale used, and final results.</p>
-- <p style="text-align: justify;">Hypothesize how data science techniques (e.g., regression, forecasting, segmentation) could have offered deeper insights.</p>
-- <p style="text-align: justify;">If feasible, perform a simplified analysis with any available data, showcasing what might have been discovered.</p>
-- <p style="text-align: justify;"><strong>Evaluation:</strong></p>
-- <p style="text-align: justify;">Compare the actual outcome to the hypothetical data-driven outcome.</p>
-- <p style="text-align: justify;">Identify gaps or assumptions in your reconstruction—did you have sufficient data or resources at the time?</p>
-- <p style="text-align: justify;">Reflect on the alignment of the hypothetical result with the company’s strategic goals.</p>
-- <p style="text-align: justify;"><strong>Refinement:</strong></p>
-- <p style="text-align: justify;">Outline recommendations for integrating data science into future decision-making: possible pilot tests, improved data collection, or stakeholder involvement.</p>
-- <p style="text-align: justify;">Discuss how you’d address the challenges (cultural resistance, data quality, etc.) that may have hindered a data-driven approach originally.</p>
-- <p style="text-align: justify;">Present your findings to a colleague or department head and gather feedback on how these insights can inform upcoming projects.</p>
 ---
-### **Assignment 3:** Rapid Analytics Prototyping
-<p style="text-align: justify;">
-<strong>Objective:</strong> Gain hands-on exposure to the data science lifecycle by executing a small-scale analytics project, from defining a question to providing actionable recommendations.
-</p>
 
-<p style="text-align: justify;">
-<strong>Task:</strong> Choose an accessible dataset—either internal or publicly available—and define a clear business question (e.g., “Which factors most affect our product’s rating?”). Walk through data understanding (basic exploration), data preparation (cleaning and transformation), a simple modeling or analysis step, evaluation of results, and a recommendation based on your findings.
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 3: Rapid Analytics Prototyping</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Gain hands-on exposure to the data science lifecycle by executing a small-scale analytics project, from defining a question to providing actionable recommendations.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Task:</h3>
+    <p style="text-align: justify;">Choose an accessible dataset—either internal or publicly available—and define a clear business question (e.g., “Which factors most affect our product’s rating?”). Walk through data understanding (basic exploration), data preparation (cleaning and transformation), a simple modeling or analysis step, evaluation of results, and a recommendation based on your findings.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <div class="table-responsive mt-2">
+      <table class="table table-bordered table-striped">
+        <thead class="table-light">
+          <tr>
+            <th scope="col" style="width: 25%;">Aspect</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Steps to Complete:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Select a dataset pertinent to your interests or your company’s domain (sales, operations, customer reviews, etc.). Formulate a concise objective: “We want to see if X predicts Y” or “We aim to group items by Z to find segments.” Examine and clean the data, addressing missing values or inconsistencies. Apply a straightforward analysis or model (descriptive stats, correlation, basic regression, or clustering if relevant). Summarize results: what key patterns emerged, and how confident are you in them?</p></td>
+          </tr>
+          <tr>
+            <td><strong>Evaluation:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Gauge the relevance of your insights to real business decisions. Check whether you’ve met the original objective—did you answer the question adequately? Note any limitations, such as small sample size or potential biases, that reduce the generalizability of your findings.</p></td>
+          </tr>
+          <tr>
+            <td><strong>Refinement:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Suggest how you would extend or improve the analysis (adding more data, trying a different model). Discuss how these insights might be operationalized (e.g., integrated into a sales dashboard or used in an A/B test). Share your results with a colleague or manager for input on next steps or broader application.</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
-<p style="text-align: justify;">
-<strong>Guidance:</strong>
-</p>
-
-- <p style="text-align: justify;"><strong>Steps to Complete:</strong></p>
-- <p style="text-align: justify;">Select a dataset pertinent to your interests or your company’s domain (sales, operations, customer reviews, etc.).</p>
-- <p style="text-align: justify;">Formulate a concise objective: “We want to see if X predicts Y” or “We aim to group items by Z to find segments.”</p>
-- <p style="text-align: justify;">Examine and clean the data, addressing missing values or inconsistencies.</p>
-- <p style="text-align: justify;">Apply a straightforward analysis or model (descriptive stats, correlation, basic regression, or clustering if relevant).</p>
-- <p style="text-align: justify;">Summarize results: what key patterns emerged, and how confident are you in them?</p>
-- <p style="text-align: justify;"><strong>Evaluation:</strong></p>
-- <p style="text-align: justify;">Gauge the relevance of your insights to real business decisions.</p>
-- <p style="text-align: justify;">Check whether you’ve met the original objective—did you answer the question adequately?</p>
-- <p style="text-align: justify;">Note any limitations, such as small sample size or potential biases, that reduce the generalizability of your findings.</p>
-- <p style="text-align: justify;"><strong>Refinement:</strong></p>
-- <p style="text-align: justify;">Suggest how you would extend or improve the analysis (adding more data, trying a different model).</p>
-- <p style="text-align: justify;">Discuss how these insights might be operationalized (e.g., integrated into a sales dashboard or used in an A/B test).</p>
-- <p style="text-align: justify;">Share your results with a colleague or manager for input on next steps or broader application.</p>
 ---
-### **Assignment 4:** Evaluate and Refine a Data Dashboard
-<p style="text-align: justify;">
-<strong>Objective:</strong> Improve the clarity and actionability of a business dashboard, ensuring that the metrics and visualizations support effective, data-driven decisions.
-</p>
 
-<p style="text-align: justify;">
-<strong>Task:</strong> Select an existing dashboard or report in your company (or a publicly available example). Critique its design, content, and relevance to strategic goals. Identify three strengths and three weaknesses, then propose at least three concrete improvements, such as better visualizations or the inclusion of comparative metrics. If possible, create a mockup or sample revision.
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 4: Evaluate and Refine a Data Dashboard</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Improve the clarity and actionability of a business dashboard, ensuring that the metrics and visualizations support effective, data-driven decisions.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Task:</h3>
+    <p style="text-align: justify;">Select an existing dashboard or report in your company (or a publicly available example). Critique its design, content, and relevance to strategic goals. Identify three strengths and three weaknesses, then propose at least three concrete improvements, such as better visualizations or the inclusion of comparative metrics. If possible, create a mockup or sample revision.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <div class="table-responsive mt-2">
+      <table class="table table-bordered table-striped">
+        <thead class="table-light">
+          <tr>
+            <th scope="col" style="width: 25%;">Aspect</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Steps to Complete:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Review the dashboard’s purpose: who uses it and for what decisions? Check if the metrics align with key performance indicators or if it presents extraneous data. Assess visual design and ease of interpretation: are charts clear, labeled, and logically organized? Consider update frequency, data latency, and any interactive features that might enhance usability.</p></td>
+          </tr>
+          <tr>
+            <td><strong>Evaluation:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Determine if users can quickly discern actionable insights from the existing layout. Verify data accuracy and consistency: do values match other reliable sources or operational reports? Solicit feedback from an end-user or stakeholder on the utility of the dashboard.</p></td>
+          </tr>
+          <tr>
+            <td><strong>Refinement:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Suggest improvements—e.g., remove clutter, add reference lines or benchmarks, group related metrics on one view. Draft or sketch a redesigned layout illustrating your recommended changes. Present your suggestions to the dashboard owner or a peer reviewer, and incorporate their feedback into a final version.</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
-<p style="text-align: justify;">
-<strong>Guidance:</strong>
-</p>
-
-- <p style="text-align: justify;"><strong>Steps to Complete:</strong></p>
-- <p style="text-align: justify;">Review the dashboard’s purpose: who uses it and for what decisions?</p>
-- <p style="text-align: justify;">Check if the metrics align with key performance indicators or if it presents extraneous data.</p>
-- <p style="text-align: justify;">Assess visual design and ease of interpretation: are charts clear, labeled, and logically organized?</p>
-- <p style="text-align: justify;">Consider update frequency, data latency, and any interactive features that might enhance usability.</p>
-- <p style="text-align: justify;"><strong>Evaluation:</strong></p>
-- <p style="text-align: justify;">Determine if users can quickly discern actionable insights from the existing layout.</p>
-- <p style="text-align: justify;">Verify data accuracy and consistency: do values match other reliable sources or operational reports?</p>
-- <p style="text-align: justify;">Solicit feedback from an end-user or stakeholder on the utility of the dashboard.</p>
-- <p style="text-align: justify;"><strong>Refinement:</strong></p>
-- <p style="text-align: justify;">Suggest improvements—e.g., remove clutter, add reference lines or benchmarks, group related metrics on one view.</p>
-- <p style="text-align: justify;">Draft or sketch a redesigned layout illustrating your recommended changes.</p>
-- <p style="text-align: justify;">Present your suggestions to the dashboard owner or a peer reviewer, and incorporate their feedback into a final version.</p>
 ---
-### **Assignment 5:** Ethical Data Practice Audit
-<p style="text-align: justify;">
-<strong>Objective:</strong> Examine how personal data or algorithmic decision-making is managed within a specific project or workflow, identifying and mitigating ethical and compliance risks.
-</p>
 
-<p style="text-align: justify;">
-<strong>Task:</strong> Select one data-driven process (e.g., targeted marketing, AI-driven hiring, credit scoring). Investigate how data is collected, stored, and utilized, and then evaluate its adherence to privacy regulations (GDPR, CCPA), fairness, and transparency. Identify at least two potential risks—such as bias, data misuse, or security gaps—and propose concrete steps to address them.
-</p>
+<div class="assignment-block my-5 p-4 border rounded shadow-sm">
+  <h2 class="fs-4 fw-semibold mb-3" style="color: #3056d5;">📝 Assignment 5: Ethical Data Practice Audit</h2>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">🎯 Objective:</h3>
+    <p style="text-align: justify;">Examine how personal data or algorithmic decision-making is managed within a specific project or workflow, identifying and mitigating ethical and compliance risks.</p>
+  </div>
+  
+  <div class="assignment-section mb-3">
+    <h3 class="fs-5 fw-semibold mb-2">📋 Task:</h3>
+    <p style="text-align: justify;">Select one data-driven process (e.g., targeted marketing, AI-driven hiring, credit scoring). Investigate how data is collected, stored, and utilized, and then evaluate its adherence to privacy regulations (GDPR, CCPA), fairness, and transparency. Identify at least two potential risks—such as bias, data misuse, or security gaps—and propose concrete steps to address them.</p>
+  </div>
+  
+  <div class="assignment-section">
+    <h3 class="fs-5 fw-semibold mb-2">💡 Guidance:</h3>
+    <div class="table-responsive mt-2">
+      <table class="table table-bordered table-striped">
+        <thead class="table-light">
+          <tr>
+            <th scope="col" style="width: 25%;">Aspect</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Steps to Complete:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Map out the flow of data in the chosen process, from collection and storage to usage in analytics. Document who has access to the data, and whether consent or privacy notices are in place. Assess the model or logic being used if decisions are automated, checking for features that could yield biased outcomes.</p></td>
+          </tr>
+          <tr>
+            <td><strong>Evaluation:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Compare current practices to relevant ethical guidelines or legal requirements. Pinpoint gaps or vulnerabilities (e.g., reliance on sensitive attributes, lack of informed consent, weak encryption). Determine the potential impact on customers, employees, or stakeholders if these risks manifest.</p></td>
+          </tr>
+          <tr>
+            <td><strong>Refinement:</strong></td>
+            <td><p style="text-align: justify; margin-bottom: 0;">Recommend mitigation strategies—removing certain data fields, adding bias checks, strengthening access controls, or establishing an appeals process for automated decisions. Outline an implementation roadmap with clear owners and timelines. Share findings with a risk or compliance officer, gathering input on how to integrate these measures into broader data governance initiatives.</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
-<p style="text-align: justify;">
-<strong>Guidance:</strong>
-</p>
-
-- <p style="text-align: justify;"><strong>Steps to Complete:</strong></p>
-- <p style="text-align: justify;">Map out the flow of data in the chosen process, from collection and storage to usage in analytics.</p>
-- <p style="text-align: justify;">Document who has access to the data, and whether consent or privacy notices are in place.</p>
-- <p style="text-align: justify;">Assess the model or logic being used if decisions are automated, checking for features that could yield biased outcomes.</p>
-- <p style="text-align: justify;"><strong>Evaluation:</strong></p>
-- <p style="text-align: justify;">Compare current practices to relevant ethical guidelines or legal requirements.</p>
-- <p style="text-align: justify;">Pinpoint gaps or vulnerabilities (e.g., reliance on sensitive attributes, lack of informed consent, weak encryption).</p>
-- <p style="text-align: justify;">Determine the potential impact on customers, employees, or stakeholders if these risks manifest.</p>
-- <p style="text-align: justify;"><strong>Refinement:</strong></p>
-- <p style="text-align: justify;">Recommend mitigation strategies—removing certain data fields, adding bias checks, strengthening access controls, or establishing an appeals process for automated decisions.</p>
-- <p style="text-align: justify;">Outline an implementation roadmap with clear owners and timelines.</p>
-- <p style="text-align: justify;">Share findings with a risk or compliance officer, gathering input on how to integrate these measures into broader data governance initiatives.</p>
+---
 <p style="text-align: justify;">
 By following these structured assignments, you will actively apply core data science concepts within real organizational scenarios, reinforcing your understanding of how analytical methods and ethical considerations converge to create lasting business impact.
 </p>

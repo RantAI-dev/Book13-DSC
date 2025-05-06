@@ -1,16 +1,23 @@
 ---
-weight: 200
-title: "Foreword"
-description: "The best way to predict the future is to create it!"
-icon: "article"
+weight: 400  
+title: "Foreword"  
+description: "The best way to predict the future is to create it!"  
+icon: "send"  
 date: "2025-05-04T17:45:47.557549+07:00"
 lastmod: "2025-05-04T17:45:47.557565+07:00"
 katex: true
 draft: false
 toc: true
 ---
+
+{{% alert icon="💡" context="info" %}}  
+<strong>"<em>The best way to predict the future is to create it!</em>"</strong>  
+{{% /alert %}}
+
+{{% alert icon="📖" context="success" %}}  
+
 <p style="text-align: justify;">
-The commercial world is replete with promising opportunities for those who dare to harness the power of data. Yet, it remains equally riddled with friction—especially the persistent divide between business understanding and technology execution. Far too often, business leaders and executives frame commercial problems solely in terms of revenue, operations, and market share, while data scientists and engineers speak a different language of algorithms, models, and code. It is precisely this dichotomy that Data Science for Commercial seeks to eradicate. This book offers a much-needed cohesive framework, bringing together decision-makers and technical experts under a single, unifying vision.
+The commercial world is replete with promising opportunities for those who dare to harness the power of data. Yet, it remains equally riddled with friction—especially the persistent divide between business understanding and technology execution. Far too often, business leaders and executives frame commercial problems solely in terms of revenue, operations, and market share, while data scientists and engineers speak a different language of algorithms, models, and code. It is precisely this dichotomy that <em>Data Science for Commercial</em> seeks to eradicate. This book offers a much-needed cohesive framework, bringing together decision-makers and technical experts under a single, unifying vision.
 </p>
 
 <p style="text-align: justify;">
@@ -22,11 +29,11 @@ The only way forward is for business professionals and technical experts to spea
 </p>
 
 <p style="text-align: justify;">
-What makes Data Science for Commercial unique is its holistic approach rooted in the Fundamental, Conceptual, and Practical (FCP) pillars. From theoretical underpinnings to real-world case studies, this book ensures that business leaders not only grasp the “what” and “why” of data science but also the “how” in an actionable manner. It demystifies data-driven methodologies while preserving the complexity and rigor demanded by academic and professional standards. By addressing foundational concepts, explaining core frameworks, and illustrating hands-on applications, this text equips leaders to champion data initiatives with unwavering confidence.
+What makes <em>Data Science for Commercial</em> unique is its holistic approach rooted in the Fundamental, Conceptual, and Practical (FCP) pillars. From theoretical underpinnings to real-world case studies, this book ensures that business leaders not only grasp the “what” and “why” of data science but also the “how” in an actionable manner. It demystifies data-driven methodologies while preserving the complexity and rigor demanded by academic and professional standards. By addressing foundational concepts, explaining core frameworks, and illustrating hands-on applications, this text equips leaders to champion data initiatives with unwavering confidence.
 </p>
 
 <p style="text-align: justify;">
-I have no doubt that Data Science for Commercial will be instrumental in shaping the curricula of undergraduate, graduate, and executive programs alike. Its robust content and forward-thinking stance will empower a new generation of leaders who understand both the language of business and the mechanics of technology. My hope is that this work becomes a central literature for anyone aspiring to drive innovation, foster cross-functional collaboration, and thrive in the AI era.
+I have no doubt that <em>Data Science for Commercial</em> will be instrumental in shaping the curricula of undergraduate, graduate, and executive programs alike. Its robust content and forward-thinking stance will empower a new generation of leaders who understand both the language of business and the mechanics of technology. My hope is that this work becomes a central literature for anyone aspiring to drive innovation, foster cross-functional collaboration, and thrive in the AI era.
 </p>
 
 <p style="text-align: justify;">
@@ -37,10 +44,15 @@ Above all, I encourage you to treat this book as both a guide and a challenge. A
 I commend the authors for their commitment to bridging the business-technology gap in such a critical moment of commercial evolution. I trust that as you turn these pages, you will be inspired to champion data-driven strategies in your organization, nurture a culture of continuous learning, and ultimately lead the charge in defining the future of commerce.
 </p>
 
-<p style="text-align: justify;">
-<strong>Prof. Alhadi Bustamam, Ph.D</strong>
-</p>
+<center>  
+Bandung, May 2025
 
-<p style="text-align: justify;">
-Data Science Center, Universitas Indonesia
-</p>
+&nbsp;  
+
+&nbsp;  
+
+<strong>Prof. Alhadi Bustamam, Ph.D</strong>  
+<br>Data Science Center, Universitas Indonesia  
+</center>  
+
+{{% /alert %}}

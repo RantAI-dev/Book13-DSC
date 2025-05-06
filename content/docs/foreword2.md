@@ -2,13 +2,20 @@
 weight: 300
 title: "Foreword"
 description: "Chaining Complexity and Opportunity Through Data Science for Commercial Success!"
-icon: "article"
+icon: "send"
 date: "2025-05-04T17:45:47.558291+07:00"
 lastmod: "2025-05-04T17:45:47.558305+07:00"
 katex: true
 draft: false
 toc: true
 ---
+
+{{% alert icon="💡" context="info" %}}  
+<strong>"<em>Chaining Complexity and Opportunity Through Data Science for Commercial Success!</em>"</strong>  
+{{% /alert %}}
+
+{{% alert icon="📖" context="success" %}}  
+
 <p style="text-align: justify;">
 In today’s rapidly evolving global market, data is increasingly becoming the currency of decision-making, and artificial intelligence is reshaping the very contours of enterprise strategy. Businesses no longer survive by intuition alone; they require systematic insight, underpinned by robust analytical models and collaborative frameworks. Having devoted much of my work to agent-based simulations, system dynamics, and value co-creation among diverse stakeholders—from small-scale entrepreneurs to large-scale industrial sectors—I recognize the urgent need for business leaders to understand data science in a holistic manner. This book, <em>Data Science for Commercial</em>, arrives at the perfect juncture to illuminate that path.
 </p>
@@ -33,4 +40,11 @@ Looking ahead, the demands on business leaders grow more complex by the day. AI-
 May you find in these pages the same inspiration I have found in my own journey: that armed with data, a strong methodological framework, and a willingness to collaborate, we can transform daunting, complex challenges into opportunities for sustainable growth and shared prosperity. This is the true essence of data science in the commercial realm, and I congratulate the authors for capturing it so effectively.
 </p>
 
-#### **Dr. Manahan Parlindungan Saragih Siallagan - SBM ITB**
+<center>
+
+<strong>Dr. Manahan Parlindungan Saragih Siallagan</strong>  
+<br>SBM ITB
+
+</center>
+
+{{% /alert %}}
