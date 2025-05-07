@@ -1,4 +1,4 @@
-<!-- {{ $page := . }}
+{{ $page := . }}
 {{ $site := .Site }}
 
 {{/*
@@ -25,7 +25,7 @@
             {{ with $site.Params.comentario.defaultLink }}data-default-link="{{ . }}"{{ end }}
             {{ with $site.Params.comentario.theme }}data-theme="{{ . }}"{{ end }} {{/* e.g., light or dark */}}
         ></comentario-comments>
-        <script defer src="{{ $comentarioHostURL }}/js/comentario.js"
+        <script defer src="{{ $comentarioHostURL }}/comentario.js"
             data-comentario-url="{{ $comentarioHostURL }}"
             data-auto-init="true"
             {{ with $site.Params.comentario.cssOverride }}data-css-override="{{ . | absURL }}"{{ end }}
@@ -33,7 +33,7 @@
         <noscript>Please enable JavaScript to view the comments.</noscript>
     </div>
 {{ else if (and (not $comentarioEnabledSite) (not $commentsDisabledPage) $comentarioHostURL) }}
-    {{ end }} -->
+    {{ end }}
 
-<script defer src="https://comments.rantai.dev/comentario.js"></script>
-<comentario-comments></comentario-comments>
+<!-- <script defer src="https://comments.rantai.dev/comentario.js"></script>
+<comentario-comments></comentario-comments> -->
