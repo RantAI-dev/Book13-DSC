@@ -1,4 +1,4 @@
-{{ $page := . }}
+<!-- {{ $page := . }}
 {{ $site := .Site }}
 
 {{/*
@@ -33,4 +33,7 @@
         <noscript>Please enable JavaScript to view the comments.</noscript>
     </div>
 {{ else if (and (not $comentarioEnabledSite) (not $commentsDisabledPage) $comentarioHostURL) }}
-    {{ end }}
+    {{ end }} -->
+
+<script defer src="https://comments.rantai.dev/comentario.js"></script>
+<comentario-comments></comentario-comments>
